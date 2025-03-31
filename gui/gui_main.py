@@ -1,5 +1,10 @@
 import pygame
-from screens import main_menu_screen
+from screens import main_menu_screen, campaign as screens_campaign
+from main import choose_campaign 
+
+
+campaign = choose_campaign()
+screens_campaign = campaign 
 
 pygame.init()
 SCREEN_WIDTH, SCREEN_HEIGHT = 1000, 700
