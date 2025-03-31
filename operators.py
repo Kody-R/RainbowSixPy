@@ -89,3 +89,9 @@ class Operator:
             self.health = 100
         print(f"{self.codename} healed to {self.health} HP.")
         self.apply_damage(0)  # Re-evaluate status
+
+    def clear_gear(self):
+        self.primary = None
+        self.sidearm = None
+        self.gadgets = []
+

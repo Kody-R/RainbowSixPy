@@ -1,4 +1,6 @@
 from game_data import operators, missions, gear_catalog, mission_maps
+from utils import calculate_synergy_bonus
+from mission_state import MissionState
 import random
 
 def show_operators():
@@ -36,26 +38,44 @@ def choose_team(required_roles):
     return team
 
 def equip_team(team):
-    print("\n--- GEAR SELECTION ---")
+    print("\n--- GEAR LOADOUT ---")
+    from game_data import gear_catalog
+
     for op in team:
-        print(f"\nAssigning gear for {op.codename}:")
-        print("Available Gear:")
-        for idx, gear in enumerate(gear_catalog, 1):
-            print(f"[{idx}] {gear.name} ({gear.type})")
-        choices = input("Enter gear numbers separated by space (max weight 6): ").split()
-        for c in choices:
+        print(f"\nCurrent loadout for {op.codename}: {', '.join(op.get_gear_names()) or 'None'}")
+        change = input(f"Would you like to change {op.codename}'s loadout? (y/n): ").strip().lower()
+
+        if change != 'y':
+            continue
+        
+        op.clear_gear()
+        # Show gear catalog
+        print("\nAvailable Gear:")
+        for idx, g in enumerate(gear_catalog, 1):
+            print(f"[{idx}] {g.name} [{g.type}] — Damage: {g.damage}, Noise: {g.noise}, Effect: {g.effect or 'None'}, Weight: {g.weight}")
+
+        print(f"Max allowed gear weight: {op.max_gear_weight}")
+        print("Enter gear numbers separated by space (primary, sidearm, then utilities/gadgets):")
+        indices = input("Your choices: ").split()
+
+        # Reset gear (soft reset — just remove previous and reassign from scratch)
+        op.primary = None
+        op.sidearm = None
+        op.gadgets = []
+
+        for i in indices:
             try:
-                gear_item = gear_catalog[int(c)-1]
-                if not op.assign_gear(gear_item):
-                    break
+                gear = gear_catalog[int(i) - 1]
+                if not op.assign_gear(gear):
+                    print(f"Skipping {gear.name} due to weight limit.")
             except:
                 continue
 
+
 def explore_mission(team, mission):
-    print("\n--- ZONE NAVIGATION ---")
+    state = MissionState()
     zones = mission_maps[mission.name]
     current_zone = zones["Entry Point"]
-
     visited = set()
 
     while current_zone:
@@ -65,7 +85,7 @@ def explore_mission(team, mission):
 
         # Handle encounter
         if current_zone.encounter and not current_zone.cleared:
-            handle_zone_encounter(team, current_zone)
+            handle_zone_encounter(team, current_zone,state)
             current_zone.cleared = True
 
         # Loot
@@ -89,12 +109,12 @@ def explore_mission(team, mission):
             print("🚁 Mission complete — reached extraction!")
             break
 
+        print(f"\n📶 Current Alert Level: {state.alert}/100")
         print("\nAvailable paths:")
         for idx, nz in enumerate(current_zone.next_zones, 1):
             print(f"{idx}. {nz}")
         choice = int(input("Choose your path: ")) - 1
-        next_zone_name = current_zone.next_zones[choice]
-        current_zone = zones[next_zone_name]
+        current_zone = zones[current_zone.next_zones[choice]]
 
 
 def mission_encounter(team):
@@ -161,7 +181,10 @@ def mission_encounter(team):
         # Stat resolution
         stat = getattr(op, encounter["type"])
         roll = random.randint(1, 10)
-        success_chance = stat + roll + bonus
+        synergy = calculate_synergy_bonus(op, encounter["type"])
+        success_chance = stat + roll + bonus + synergy
+        print(f"🎯 Roll = {stat} + {roll} + gear bonus({bonus}) + synergy({synergy}) = {success_chance}")
+
 
         print(f"{op.codename} rolls {stat} + {roll} + bonus({bonus}) = {success_chance}")
 
@@ -181,10 +204,11 @@ def mission_encounter(team):
     for op in team:
         print(f"{op.codename}: {op.health} HP — {op.status}")
 
-def handle_zone_encounter(team, zone):
+def handle_zone_encounter(team, zone, state):
     print("\n⚔️ Zone Encounter:")
     encounter = zone.encounter
-    print(f"{zone.name} requires {encounter['type']} skill.")
+    encounter_type = encounter["type"]
+    print(f"\n⚔️ Zone Encounter ({encounter_type.upper()}) — Alert Level: {state.alert}/100")
 
     for idx, op in enumerate(team, 1):
         print(f"[{idx}] {op.codename} — HP: {op.health} — {op.status}")
@@ -216,10 +240,13 @@ def handle_zone_encounter(team, zone):
                 op.heal(30)
                 return
 
-    stat = getattr(op, encounter["type"])
+    stat = getattr(op, encounter_type)
     roll = random.randint(1, 10)
-    success = stat + roll + bonus
-    print(f"{op.codename} rolls {stat} + {roll} + bonus({bonus}) = {success}")
+    synergy = calculate_synergy_bonus(op, encounter_type)
+    difficulty = state.get_difficulty_modifier()
+    success = stat + roll + bonus + synergy - difficulty
+
+    print(f"🎯 {op.codename} rolls: {stat} + {roll} + gear({bonus}) + synergy({synergy}) - alert_penalty({difficulty}) = {success}")
 
     if success >= 12:
         print("✔️ Success — no alert.")
@@ -231,7 +258,6 @@ def handle_zone_encounter(team, zone):
         op.apply_damage(random.randint(20, 40))
 
 
-
 def start_mission(mission):
     mission.show_briefing()
     team = None
@@ -239,8 +265,8 @@ def start_mission(mission):
         team = choose_team(mission.required_roles)
     equip_team(team)
     explore_mission(team, mission)
-    mission_encounter(team)
     print(f"\nMission '{mission.name}' completed.")
+
 
 def main_menu():
     while True:

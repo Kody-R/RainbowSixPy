@@ -3,21 +3,51 @@ from mission import Mission
 from gear import Gear
 from mission_map import Zone
 
-# 🎖 Operators
-operators = [
-    Operator("John Clark", "SIX", "Commander", stealth=7, marksmanship=8, tech=5, leadership=10, stamina=9,
-             gadgets=["Silenced Pistol", "Comms Kit"]),
-    Operator("Ding Chavez", "CHARGER", "Assault", stealth=6, marksmanship=9, tech=4, leadership=7, stamina=8,
-             gadgets=["AR-33", "Breach Charge"]),
-    Operator("Dietrich", "DOC", "Medic", stealth=5, marksmanship=6, tech=6, leadership=5, stamina=7,
-             gadgets=["Medkit", "SMG"]),
-    Operator("Louis Loiselle", "GHOST", "Recon", stealth=9, marksmanship=7, tech=5, leadership=4, stamina=9,
-             gadgets=["Sniper Rifle", "Camouflage"]),
-    Operator("Gustavo", "WIREFRAME", "Hacker", stealth=7, marksmanship=5, tech=10, leadership=5, stamina=6,
-             gadgets=["Hacking Kit", "Drone"]),
-    Operator("Karen", "VIPER", "Infiltrator", stealth=10, marksmanship=6, tech=7, leadership=4, stamina=8,
-             gadgets=["Throwing Knives", "EMP Device"]),
+# 🎮 Gear Catalog
+gear_catalog = [
+    Gear("AR-33", "primary", noise=6, damage=8),
+    Gear("Silenced Pistol", "sidearm", noise=2, damage=4),
+    Gear("SMG", "primary", noise=4, damage=6),
+    Gear("Sniper Rifle", "primary", noise=8, damage=10),
+    Gear("Drone", "gadget", effect="scout", weight=2),
+    Gear("Medkit", "utility", effect="heal", weight=2),
+    Gear("EMP", "utility", effect="disable electronics", weight=2),
+    Gear("Breach Charge", "utility", effect="force entry", noise=10),
 ]
+
+# 🔍 Helper function to get gear by name
+def find_gear(name):
+    for g in gear_catalog:
+        if g.name == name:
+            return g
+    return None
+
+# 🎖 Operators (with gear assigned via method)
+op1 = Operator("John Clark", "SIX", "Commander", stealth=7, marksmanship=8, tech=5, leadership=10, stamina=9)
+op1.assign_gear(find_gear("Silenced Pistol"))
+op1.assign_gear(find_gear("Drone"))
+
+op2 = Operator("Ding Chavez", "CHARGER", "Assault", stealth=6, marksmanship=9, tech=4, leadership=7, stamina=8)
+op2.assign_gear(find_gear("AR-33"))
+op2.assign_gear(find_gear("Breach Charge"))
+
+op3 = Operator("Dietrich", "DOC", "Medic", stealth=5, marksmanship=6, tech=6, leadership=5, stamina=7)
+op3.assign_gear(find_gear("SMG"))
+op3.assign_gear(find_gear("Medkit"))
+
+op4 = Operator("Louis Loiselle", "GHOST", "Recon", stealth=9, marksmanship=7, tech=5, leadership=4, stamina=9)
+op4.assign_gear(find_gear("Sniper Rifle"))
+op4.assign_gear(find_gear("Drone"))
+
+op5 = Operator("Gustavo", "WIREFRAME", "Hacker", stealth=7, marksmanship=5, tech=10, leadership=5, stamina=6)
+op5.assign_gear(find_gear("Silenced Pistol"))
+op5.assign_gear(find_gear("EMP"))
+
+op6 = Operator("Karen", "VIPER", "Infiltrator", stealth=10, marksmanship=6, tech=7, leadership=4, stamina=8)
+op6.assign_gear(find_gear("SMG"))
+op6.assign_gear(find_gear("EMP"))
+
+operators = [op1, op2, op3, op4, op5, op6]
 
 # 🎯 Missions
 missions = [
@@ -33,19 +63,7 @@ missions = [
             enemies="Terrorists with timed device", intel_level="Minimal", required_roles=["Commander", "Tech"])
 ]
 
-
-gear_catalog = [
-    Gear("AR-33", "primary", noise=6, damage=8),
-    Gear("Silenced Pistol", "sidearm", noise=2, damage=4),
-    Gear("SMG", "primary", noise=4, damage=6),
-    Gear("Sniper Rifle", "primary", noise=8, damage=10),
-    Gear("Drone", "gadget", effect="scout", weight=2),
-    Gear("Medkit", "utility", effect="heal", weight=2),
-    Gear("EMP", "utility", effect="disable electronics", weight=2),
-    Gear("Breach Charge", "utility", effect="force entry", noise=10),
-]
-
-
+# 🗺️ Mission Maps
 mission_maps = {
     "Operation Silent Storm": {
         "Entry Point": Zone(
