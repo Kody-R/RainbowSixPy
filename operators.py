@@ -14,6 +14,9 @@ class Operator:
         self.sidearm = None
         self.gadgets = []  # gadgets/utilities
         self.max_gear_weight = 6  # max carry weight
+        self.xp = 0
+        self.level = 1
+        self.unlocked_gear = set()
         
     def is_alive(self):
         return self.health > 0
@@ -94,4 +97,27 @@ class Operator:
         self.primary = None
         self.sidearm = None
         self.gadgets = []
+
+    def gain_xp(self, amount):
+        self.xp += amount
+        old_level = self.level
+        self.level = 1 + self.xp // 100  # 100 XP per level
+        if self.level > old_level:
+            print(f"⭐ {self.codename} leveled up to {self.level}!")
+
+    def unlock_gear(self, gear_name):
+        self.unlocked_gear.add(gear_name)
+
+    def can_use(self, gear):
+        if not hasattr(gear, "rarity"):
+            return True  # old gear
+        if gear.rarity == "Common":
+            return True
+        if gear.rarity == "Rare" and self.level >= 2:
+            return True
+        if gear.rarity == "Epic" and self.level >= 4:
+            return True
+        if gear.rarity == "Legendary" and gear.name in self.unlocked_gear:
+            return True
+        return False
 
