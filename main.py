@@ -1,10 +1,14 @@
 
-from game_data import missions, gear_catalog, mission_maps, default_operators
+from game_data import gear_catalog, default_operators, TYPE_ICONS
 from utils import calculate_synergy_bonus
 from mission_state import MissionState
 from save_system import list_saves, load_campaign, save_campaign
 from campaign import CampaignState
+from mission_generator import generate_random_mission
 import random
+
+mission_maps = {}
+
 
 def choose_campaign():
     print("\n==== RAINBOW SIX - CAMPAIGN SYSTEM ====")
@@ -35,7 +39,7 @@ def show_operators(campaign):
     for idx, op in enumerate(campaign.operators, 1):
         print(f"[{idx}] {op.codename} ({op.role}) — Level {op.level}, XP: {op.xp}, Status: {op.status}")
 
-def choose_team(campaign, required_roles):
+def choose_team(campaign):
     team = []
     print("\nSelect 2–4 operators by number (separated by space):")
     show_operators(campaign)
@@ -51,12 +55,6 @@ def choose_team(campaign, required_roles):
     if not (2 <= len(team) <= 4):
         print("Team must be 2–4 members.")
         return None
-
-    team_roles = [op.role for op in team]
-    for req in required_roles:
-        if req not in team_roles:
-            print(f"Missing required role: {req}")
-            return None
 
     print("\nTeam confirmed:")
     for op in team:
@@ -178,7 +176,7 @@ def explore_mission(team, mission, campaign):
                     earned = 50 + (op.stamina * 2)
                     print(f"{op.codename} earns {earned} XP")
                     op.gain_xp(earned)
-            campaign.mark_mission_complete(mission.name)
+            campaign.mark_mission_complete(mission)
             save_campaign(campaign.name, campaign)
             break
 
@@ -189,34 +187,55 @@ def explore_mission(team, mission, campaign):
         choice = int(input("Choose your path: ")) - 1
         current_zone = zones[current_zone.next_zones[choice]]
 
-def start_mission(mission, campaign):
+def start_mission(campaign):
+    # Generate random mission and map
+    mission, map_data = generate_random_mission(len(campaign.completed_missions))
+    mission_maps[mission.name] = map_data
+    campaign.generated_missions[mission.name] = mission
+    print(f"Ἑ5 Generated Mission: {mission.name}")
+
     mission.show_briefing()
     team = None
     while not team:
-        team = choose_team(campaign, mission.required_roles)
+        team = choose_team(campaign)
     equip_team(team)
     explore_mission(team, mission, campaign)
     print(f"\nMission '{mission.name}' completed.")
+
+def show_campaign_map(campaign):
+    print("\n🌍 GLOBAL OPS MAP")
+
+    all_locations = list(set(m.location for m in campaign.generated_missions.values()))
+    all_locations = sorted(all_locations)
+
+    for loc in all_locations:
+        missions_here = [m for m in campaign.generated_missions.values() if m.location == loc]
+        for m in missions_here:
+            icon = TYPE_ICONS.get(m.mission_type, "❓")
+            status = "✅" if m.name in campaign.completed_missions else "🔲"
+            print(f"{status} {icon} {loc} — {m.name} ({m.mission_type})")
+
 
 def main_menu(campaign):
     while True:
         print("\n==== RAINBOW SIX: TEXT STRATEGY ====")
         print("1. View Operators")
         print("2. Start Mission")
-        print("3. Exit")
+        print("3. View Global Campaign Map")
+        print("4. Exit")
         choice = input("Choose an option: ")
 
         if choice == "1":
             show_operators(campaign)
         elif choice == "2":
-            print("\n--- MISSIONS ---")
-            for idx, mission in enumerate(missions, 1):
-                print(f"[{idx}] {mission.name} ({mission.difficulty})")
-            m_idx = int(input("Choose mission: ")) - 1
-            start_mission(missions[m_idx], campaign)
+            start_mission(campaign)
         elif choice == "3":
+            show_campaign_map(campaign)
+        elif choice == "4":
             break
+
 
 if __name__ == "__main__":
     campaign = choose_campaign()
     main_menu(campaign)
+

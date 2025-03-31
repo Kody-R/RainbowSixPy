@@ -2,7 +2,7 @@ from operators import Operator
 from mission import Mission
 from gear import Gear
 from mission_map import Zone
-from save_system import load_operators
+from save_system import list_saves, load_campaign, save_campaign
 
 # 🎮 Gear Catalog
 gear_catalog = [
@@ -24,6 +24,18 @@ gear_catalog = [
     Gear("Holo Projector", "gadget", effect="decoy", weight=2),
     Gear("Mini Drone", "gadget", effect="reveal enemies", weight=1),
     Gear("Signal Jammer", "gadget", effect="block sensors", weight=2),
+    Gear("Vector .45", "primary", noise=3, damage=6, effect="rapid fire", weight=2, rarity="Rare", role_lock="Recon"),
+    Gear("MK18 CQBR", "primary", noise=5, damage=8, effect="compact assault", weight=2, rarity="Rare", role_lock="Assault"),
+    Gear("Five-Seven", "sidearm", noise=2, damage=4, effect="armor piercing", weight=1, rarity="Rare"),
+    Gear("SPAS-12", "primary", noise=9, damage=10, effect="blast control", weight=3, rarity="Epic", role_lock="Assault"),
+    Gear("C4 Charge", "utility", effect="high-explosive", noise=10, weight=3, rarity="Epic", role_lock="Assault"),
+    Gear("Smoke Grenade", "utility", effect="line-of-sight blocker", weight=1, rarity="Common"),
+    Gear("Motion Sensor", "gadget", effect="detect movement", weight=1, rarity="Rare", role_lock="Recon"),
+    Gear("Hacking Pad", "gadget", effect="multi-system override", weight=2, rarity="Epic", role_lock="Tech"),
+    Gear("Sentry Gun", "gadget", effect="auto-fire defense", weight=4, rarity="Legendary", role_lock="Defense"),
+    Gear("Nano Medkit", "utility", effect="heal + revive", weight=2, rarity="Legendary", role_lock="Medic"),
+    Gear("EMP Mine", "utility", effect="trap for electronics", weight=2, rarity="Epic", role_lock="Tech"),
+    Gear("Portable Cover", "utility", effect="reduce ranged damage", weight=3, rarity="Rare", role_lock="Defense"),
 ]
 
 # 🔍 Helper function to get gear by name
@@ -34,110 +46,59 @@ def find_gear(name):
     return None
 
 # 🎖 Operators (with gear assigned via method)
-op1 = Operator("John Clark", "SIX", "Commander", stealth=7, marksmanship=8, tech=5, leadership=10, stamina=9)
-op1.assign_gear(find_gear("Silenced Pistol"))
-op1.assign_gear(find_gear("Drone"))
+op1 = Operator("Domingo Chavez", "CHAVEZ", "Assault", stealth=6, marksmanship=9, tech=4, leadership=8, stamina=8)
+op1.assign_gear(find_gear("AR-33"))
+op1.assign_gear(find_gear("Breach Charge"))
 
-op2 = Operator("Ding Chavez", "CHARGER", "Assault", stealth=6, marksmanship=9, tech=4, leadership=7, stamina=8)
-op2.assign_gear(find_gear("AR-33"))
-op2.assign_gear(find_gear("Breach Charge"))
+op2 = Operator("Sam Driscoll", "HAWK", "Recon", stealth=9, marksmanship=7, tech=4, leadership=5, stamina=9)
+op2.assign_gear(find_gear("Silenced Pistol"))
+op2.assign_gear(find_gear("Mini Drone"))
 
-op3 = Operator("Dietrich", "DOC", "Medic", stealth=5, marksmanship=6, tech=6, leadership=5, stamina=7)
-op3.assign_gear(find_gear("SMG"))
-op3.assign_gear(find_gear("Medkit"))
+op3 = Operator("Dieter Weber", "WEBER", "Sniper", stealth=7, marksmanship=10, tech=3, leadership=6, stamina=7)
+op3.assign_gear(find_gear("Sniper Rifle"))
+op3.assign_gear(find_gear("Drone"))
 
-op4 = Operator("Louis Loiselle", "GHOST", "Recon", stealth=9, marksmanship=7, tech=5, leadership=4, stamina=9)
-op4.assign_gear(find_gear("Sniper Rifle"))
-op4.assign_gear(find_gear("Drone"))
+op4 = Operator("Eddie Price", "FALCON", "Commander", stealth=5, marksmanship=8, tech=6, leadership=10, stamina=7)
+op4.assign_gear(find_gear("Silenced Pistol"))
+op4.assign_gear(find_gear("Adrenaline Shot"))
 
-op5 = Operator("Gustavo", "WIREFRAME", "Hacker", stealth=7, marksmanship=5, tech=10, leadership=5, stamina=6)
-op5.assign_gear(find_gear("Silenced Pistol"))
-op5.assign_gear(find_gear("EMP"))
+op5 = Operator("Louis Loiselle", "GHOST", "Recon", stealth=10, marksmanship=7, tech=5, leadership=4, stamina=9)
+op5.assign_gear(find_gear("Suppressed SMG"))
+op5.assign_gear(find_gear("Holo Projector"))
 
-op6 = Operator("Karen", "VIPER", "Infiltrator", stealth=10, marksmanship=6, tech=7, leadership=4, stamina=8)
-op6.assign_gear(find_gear("SMG"))
+op6 = Operator("Tim Noonan", "LINK", "Tech", stealth=4, marksmanship=5, tech=10, leadership=6, stamina=6)
 op6.assign_gear(find_gear("EMP"))
+op6.assign_gear(find_gear("Signal Jammer"))
 
-op7 = Operator("Sasha Vanko", "LANCER", "Assault", stealth=5, marksmanship=9, tech=3, leadership=6, stamina=8)
-op7.assign_gear(find_gear("AR-33"))
-op7.assign_gear(find_gear("Breach Charge"))
+op7 = Operator("Michael Granger", "BULLDOG", "Assault", stealth=4, marksmanship=8, tech=5, leadership=7, stamina=9)
+op7.assign_gear(find_gear("Tactical Shotgun"))
+op7.assign_gear(find_gear("Flashbang"))
 
-op8 = Operator("Zara Khalid", "EMBER", "Recon", stealth=10, marksmanship=7, tech=5, leadership=4, stamina=9)
-op8.assign_gear(find_gear("Silenced Pistol"))
-op8.assign_gear(find_gear("Drone"))
+op8 = Operator("David Foster", "DOC", "Medic", stealth=5, marksmanship=6, tech=7, leadership=6, stamina=7)
+op8.assign_gear(find_gear("SMG"))
+op8.assign_gear(find_gear("Medkit"))
 
-op9 = Operator("Mateo Silva", "SPARK", "Tech", stealth=6, marksmanship=5, tech=9, leadership=5, stamina=7)
-op9.assign_gear(find_gear("EMP"))
+op9 = Operator("Antonio Ortega", "EDGE", "Infiltrator", stealth=10, marksmanship=6, tech=6, leadership=5, stamina=8)
 op9.assign_gear(find_gear("SMG"))
+op9.assign_gear(find_gear("EMP"))
 
-op10 = Operator("Elena Torres", "NOVA", "Commander", stealth=6, marksmanship=8, tech=6, leadership=9, stamina=8)
-op10.assign_gear(find_gear("Silenced Pistol"))
-op10.assign_gear(find_gear("Medkit"))
+op10 = Operator("Gus Werenski", "WATCHDOG", "Defense", stealth=6, marksmanship=7, tech=5, leadership=6, stamina=7)
+op10.assign_gear(find_gear("AR-33"))
+op10.assign_gear(find_gear("Armor Plates"))
 
 # Default operator setup
 default_operators = [op1, op2, op3, op4, op5, op6, op7, op8, op9, op10]
 
 # Load from save or fallback to default
-operators = load_operators() or default_operators
+operators = default_operators
 
-# 🎯 Missions
-missions = [
-    Mission("Operation Silent Storm", "Infiltrate and extract hostage", "Zurich, Switzerland", "Medium",
-            enemies="Heavy Guard Patrol", intel_level="Moderate", required_roles=["Infiltrator", "Medic"]),
-    Mission("Operation Iron Dagger", "Sabotage arms shipment", "Sao Paulo, Brazil", "Hard",
-            enemies="Militia + Armed Drones", intel_level="Low", required_roles=["Hacker", "Assault"]),
-    Mission("Operation Ghost Fang", "Assassinate cartel leader and exfil undetected", "Tijuana, Mexico", "Hard",
-            enemies="Bodyguards + Sniper", intel_level="High", required_roles=["Sniper", "Commander"]),
-    Mission("Operation Broken Silence", "Secure secret documents from embassy", "Berlin, Germany", "Medium",
-            enemies="CCTV + Armed Guards", intel_level="Low", required_roles=["Hacker", "Recon"]),
-    Mission("Operation Midnight Watch", "Prevent chemical weapon detonation", "London, UK", "Very Hard",
-            enemies="Terrorists with timed device", intel_level="Minimal", required_roles=["Commander", "Tech"]),
-    Mission("Operation Crimson Hawk", "Neutralize bio-weapons lab before detonation", "Istanbul, Turkey", "Very Hard",
-            enemies="Militant scientists with traps", intel_level="Low", required_roles=["Tech", "Commander"]),
 
-    Mission("Operation Black Viper", "Track and intercept arms dealer in transit", "Cape Town, South Africa", "Hard",
-            enemies="Mobile convoy + air surveillance", intel_level="Medium", required_roles=["Recon", "Assault"]),
-
-    Mission("Operation Echo Phantom", "Sabotage a rogue satellite control terminal", "Norway, Arctic Outpost", "Medium",
-            enemies="Cold-weather guards + sensors", intel_level="High", required_roles=["Tech", "Recon"]),
-
-    Mission("Operation Glass Knife", "Infiltrate embassy and extract hard drive", "Madrid, Spain", "Medium",
-            enemies="CCTV + roaming security", intel_level="Moderate", required_roles=["Infiltrator", "Tech"])
-]
-
-# 🗺️ Mission Maps
-mission_maps = {
-    "Operation Silent Storm": {
-        "Entry Point": Zone(
-            name="Entry Point",
-            description="A dark alley leading to the compound's side door.",
-            encounter={"type": "stealth"},
-            next_zones=["Hallway"]
-        ),
-        "Hallway": Zone(
-            name="Hallway",
-            description="A dim hallway with footstep echoes and a flickering light.",
-            encounter={"type": "tech"},
-            loot=["Intel Folder"],
-            next_zones=["Server Room", "Barracks"]
-        ),
-        "Server Room": Zone(
-            name="Server Room",
-            description="The main hub of communications — buzzing with electronics.",
-            encounter={"type": "tech"},
-            loot=["Data Stick"],
-            next_zones=["Extraction"]
-        ),
-        "Barracks": Zone(
-            name="Barracks",
-            description="Enemy sleeping quarters. Some gear may be stashed here.",
-            loot=["EMP", "Medkit"],
-            next_zones=["Extraction"]
-        ),
-        "Extraction": Zone(
-            name="Extraction",
-            description="The rooftop helipad where evac will arrive.",
-            next_zones=[]
-        )
-    }
+TYPE_ICONS = {
+    "Extraction": "🛩️",
+    "Sabotage": "💣",
+    "Cyber": "💻",
+    "Assault": "🔫",
+    "Rescue": "🚑",
+    "Demolition": "🔥",
+    "Unknown": "❓"
 }
