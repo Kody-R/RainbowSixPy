@@ -2,6 +2,7 @@ import pygame
 from ui_elements import Button
 from mission_generator import generate_random_mission
 from mission_gameplay_screen import MissionGameplayScreen
+from main import mission_maps 
 
 class MissionBriefingScreen:
     def __init__(self, campaign, team, on_launch, back_callback):
@@ -14,7 +15,17 @@ class MissionBriefingScreen:
         self.font = pygame.font.SysFont("arial", 20)
 
     def launch(self):
-        return MissionGameplayScreen(self.team, self.mission, self.campaign, self.on_launch)
+        # Generate new mission + zone map
+        mission, zones = generate_random_mission(len(self.campaign.completed_missions))
+        self.mission = mission
+        mission_maps[mission.name] = zones  # 🔥 Store the zone map!
+
+        # Save the mission to the campaign
+        self.campaign.generated_missions[mission.name] = mission
+
+        # Proceed to gameplay screen
+        return MissionGameplayScreen(self.team, mission, zones, self.campaign, self.on_launch)
+
 
 
     def handle_event(self, event):

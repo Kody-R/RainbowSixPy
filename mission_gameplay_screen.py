@@ -8,12 +8,12 @@ from main import mission_maps
 from save_system import save_campaign
 
 class MissionGameplayScreen:
-    def __init__(self, team, mission, campaign, on_finish_callback):
+    def __init__(self, team, mission, zones, campaign, on_finish_callback):
         self.team = [op for op in team if op.is_alive()]
         self.mission = mission
         self.campaign = campaign
         self.on_finish_callback = on_finish_callback
-        self.zones = mission_maps[mission.name]
+        self.zones = zones
         self.current_zone = self.zones["Entry Point"]
         self.state = MissionState()
         self.back_button = Button("Exit Mission", (50, 620), self.handle_exit)

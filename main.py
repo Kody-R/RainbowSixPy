@@ -189,8 +189,8 @@ def explore_mission(team, mission, campaign):
 
 def start_mission(campaign):
     # Generate random mission and map
-    mission, map_data = generate_random_mission(len(campaign.completed_missions))
-    mission_maps[mission.name] = map_data
+    mission, zones = generate_random_mission(len(campaign.completed_missions))
+    mission_maps[mission.name] = zones
     campaign.generated_missions[mission.name] = mission
     print(f"Ἑ5 Generated Mission: {mission.name}")
 
