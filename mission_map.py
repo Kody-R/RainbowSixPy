@@ -12,6 +12,8 @@ class Zone:
         print(self.description)
         if self.loot:
             print(f"  🔍 Loot found: {', '.join(self.loot)}")
+        if hasattr(self, "hazard") and self.hazard:
+            print(f"  ⚠️ Environmental Hazard: {self.hazard}")
         if self.encounter and not self.cleared:
             print("  ⚠️ Threat detected here.")
         elif not self.encounter:

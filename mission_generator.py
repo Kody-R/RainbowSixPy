@@ -50,6 +50,17 @@ ENEMY_TYPES = [
     "Urban Terror Cell", "Biohazard Researchers", "Smugglers", "AI Defense Grid"
 ]
 
+TERRAIN_HAZARDS = {
+    "Urban": ["Surveillance Cameras"],
+    "Jungle": ["Wildlife Ambush"],
+    "Arctic": ["Hypothermia"],
+    "Underground": ["Toxic Gas"],
+    "Mountain": ["Rockslide"],
+    "Coastal": ["Tidal Flooding"],
+    "Desert": ["Heatstroke"],
+}
+
+
 INTEL_LEVELS = ["Minimal", "Low", "Medium", "High"]
 
 ADJECTIVES = ["Iron", "Shadow", "Crimson", "Phantom", "Silent", "Night", "Ghost", "Cold", "Obsidian"]
@@ -107,6 +118,9 @@ def generate_random_mission(index):
     enemies = random.choice(ENEMY_TYPES)
     intel = random.choice(INTEL_LEVELS)
     name = generate_codename()
+    hazard = None
+    if terrain in TERRAIN_HAZARDS and random.random() < 0.3:  # 30% chance
+        hazard = random.choice(TERRAIN_HAZARDS[terrain])
 
     # Create zones
     zone_names = ["Entry Point"] + [f"{step}" for step in objective_steps] + ["Extraction"]
@@ -124,6 +138,7 @@ def generate_random_mission(index):
             loot=loot,
             next_zones=next_zones
         )
+        map_data[zname].hazard = hazard
 
     mission_type = infer_mission_type(objective_steps)
     mission = Mission(name, ", ".join(objective_steps), location, difficulty, enemies, intel, terrain, terrain_effect)

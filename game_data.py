@@ -46,43 +46,43 @@ def find_gear(name):
     return None
 
 # 🎖 Operators (with gear assigned via method)
-op1 = Operator("Domingo Chavez", "CHAVEZ", "Assault", stealth=6, marksmanship=9, tech=4, leadership=8, stamina=8)
+op1 = Operator("Domingo Chavez", "CHAVEZ", "Assault", stealth=6, marksmanship=9, tech=4, leadership=8, stamina=8, ability="Breach Expert")
 op1.assign_gear(find_gear("AR-33"))
 op1.assign_gear(find_gear("Breach Charge"))
 
-op2 = Operator("Sam Driscoll", "HAWK", "Recon", stealth=9, marksmanship=7, tech=4, leadership=5, stamina=9)
+op2 = Operator("Sam Driscoll", "HAWK", "Recon", stealth=9, marksmanship=7, tech=4, leadership=5, stamina=9, ability="Intel Scanner")
 op2.assign_gear(find_gear("Silenced Pistol"))
 op2.assign_gear(find_gear("Mini Drone"))
 
-op3 = Operator("Dieter Weber", "WEBER", "Sniper", stealth=7, marksmanship=10, tech=3, leadership=6, stamina=7)
+op3 = Operator("Dieter Weber", "WEBER", "Sniper", stealth=7, marksmanship=10, tech=3, leadership=6, stamina=7, ability="Sharpshooter")
 op3.assign_gear(find_gear("Sniper Rifle"))
 op3.assign_gear(find_gear("Drone"))
 
-op4 = Operator("Eddie Price", "FALCON", "Commander", stealth=5, marksmanship=8, tech=6, leadership=10, stamina=7)
+op4 = Operator("Eddie Price", "FALCON", "Commander", stealth=5, marksmanship=8, tech=6, leadership=10, stamina=7, ability="Tactical Boost")
 op4.assign_gear(find_gear("Silenced Pistol"))
 op4.assign_gear(find_gear("Adrenaline Shot"))
 
-op5 = Operator("Louis Loiselle", "GHOST", "Recon", stealth=10, marksmanship=7, tech=5, leadership=4, stamina=9)
+op5 = Operator("Louis Loiselle", "GHOST", "Recon", stealth=10, marksmanship=7, tech=5, leadership=4, stamina=9,ability="Silent Strike")
 op5.assign_gear(find_gear("Suppressed SMG"))
 op5.assign_gear(find_gear("Holo Projector"))
 
-op6 = Operator("Tim Noonan", "LINK", "Tech", stealth=4, marksmanship=5, tech=10, leadership=6, stamina=6)
+op6 = Operator("Tim Noonan", "LINK", "Tech", stealth=4, marksmanship=5, tech=10, leadership=6, stamina=6,ability="System Cracker")
 op6.assign_gear(find_gear("EMP"))
 op6.assign_gear(find_gear("Signal Jammer"))
 
-op7 = Operator("Michael Granger", "BULLDOG", "Assault", stealth=4, marksmanship=8, tech=5, leadership=7, stamina=9)
+op7 = Operator("Michael Granger", "BULLDOG", "Assault", stealth=4, marksmanship=8, tech=5, leadership=7, stamina=9,ability="Shock & Awe")
 op7.assign_gear(find_gear("Tactical Shotgun"))
 op7.assign_gear(find_gear("Flashbang"))
 
-op8 = Operator("David Foster", "DOC", "Medic", stealth=5, marksmanship=6, tech=7, leadership=6, stamina=7)
+op8 = Operator("David Foster", "DOC", "Medic", stealth=5, marksmanship=6, tech=7, leadership=6, stamina=7,ability="Combat Medic")
 op8.assign_gear(find_gear("SMG"))
 op8.assign_gear(find_gear("Medkit"))
 
-op9 = Operator("Antonio Ortega", "EDGE", "Infiltrator", stealth=10, marksmanship=6, tech=6, leadership=5, stamina=8)
+op9 = Operator("Antonio Ortega", "EDGE", "Infiltrator", stealth=10, marksmanship=6, tech=6, leadership=5, stamina=8,ability="Adaptive Ops")
 op9.assign_gear(find_gear("SMG"))
 op9.assign_gear(find_gear("EMP"))
 
-op10 = Operator("Gus Werenski", "WATCHDOG", "Defense", stealth=6, marksmanship=7, tech=5, leadership=6, stamina=7)
+op10 = Operator("Gus Werenski", "WATCHDOG", "Defense", stealth=6, marksmanship=7, tech=5, leadership=6, stamina=7,ability="Fortify")
 op10.assign_gear(find_gear("AR-33"))
 op10.assign_gear(find_gear("Armor Plates"))
 

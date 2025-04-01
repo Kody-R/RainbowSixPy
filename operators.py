@@ -1,5 +1,5 @@
 class Operator:
-    def __init__(self, name, codename, role, stealth, marksmanship, tech, leadership, stamina):
+    def __init__(self, name, codename, role, stealth, marksmanship, tech, leadership, stamina, ability=None):
         self.name = name
         self.codename = codename
         self.role = role
@@ -8,6 +8,7 @@ class Operator:
         self.tech = tech
         self.leadership = leadership
         self.stamina = stamina
+        self.ability = ability
         self.health = 100
         self.status = "Active"
         self.primary = None
@@ -72,7 +73,8 @@ class Operator:
                 f"  Stealth: {self.stealth}  Marksmanship: {self.marksmanship}\n"
                 f"  Tech: {self.tech}  Leadership: {self.leadership}  Stamina: {self.stamina}\n"
                 f"  Health: {self.health}  Status: {self.status}\n"
-                 f"  Loadout: {', '.join(self.get_gear_names()) if self.get_gear_names() else 'None'}")
+                f"  Ability: {self.ability or 'None'}\n"
+                f"  Loadout: {', '.join(self.get_gear_names()) if self.get_gear_names() else 'None'}")
     
     def use_equipment(self, item_name):
         if item_name in self.equipment:
