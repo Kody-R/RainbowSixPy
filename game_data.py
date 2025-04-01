@@ -1,8 +1,6 @@
 from operators import Operator
-from mission import Mission
+from enemy import Enemy
 from gear import Gear
-from mission_map import Zone
-from save_system import list_saves, load_campaign, save_campaign
 
 # 🎮 Gear Catalog
 gear_catalog = [
@@ -101,4 +99,34 @@ TYPE_ICONS = {
     "Rescue": "🚑",
     "Demolition": "🔥",
     "Unknown": "❓"
+}
+
+# Define terrain-appropriate enemy pools
+TERRAIN_ENEMIES = {
+    "Urban": [
+        lambda: Enemy("PMC Rifleman", "Standard", 20, 5, "patrol"),
+        lambda: Enemy("PMC Sniper", "Sniper", 15, 9, "long_range")
+    ],
+    "Jungle": [
+        lambda: Enemy("Militia Scout", "Standard", 18, 6, "patrol"),
+        lambda: Enemy("Tracker", "Sniper", 14, 8, "long_range")
+    ],
+    "Arctic": [
+        lambda: Enemy("Recon Drone", "Drone", 10, 6, "surveil"),
+        lambda: Enemy("Snow Guard", "Standard", 22, 4, "patrol")
+    ],
+    "Underground": [
+        lambda: Enemy("Tunnel Patrol", "Standard", 18, 5, "patrol"),
+        lambda: Enemy("Signal Operator", "Support", 16, 5, "boost")
+    ],
+    "Mountain": [
+        lambda: Enemy("Sniper Scout", "Sniper", 14, 9, "long_range")
+    ],
+    "Coastal": [
+        lambda: Enemy("Merc Raider", "Standard", 20, 6, "patrol")
+    ],
+    "Desert": [
+        lambda: Enemy("Desert Watchman", "Standard", 19, 6, "patrol"),
+        lambda: Enemy("Command Drone", "Drone", 10, 6, "surveil")
+    ]
 }

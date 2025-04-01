@@ -1,4 +1,5 @@
 import random
+from enemy import Enemy, TERRAIN_ENEMIES  # Import both enemy class and terrain pools
 from mission import Mission
 from mission_map import Zone
 
@@ -50,17 +51,6 @@ ENEMY_TYPES = [
     "Urban Terror Cell", "Biohazard Researchers", "Smugglers", "AI Defense Grid"
 ]
 
-TERRAIN_HAZARDS = {
-    "Urban": ["Surveillance Cameras"],
-    "Jungle": ["Wildlife Ambush"],
-    "Arctic": ["Hypothermia"],
-    "Underground": ["Toxic Gas"],
-    "Mountain": ["Rockslide"],
-    "Coastal": ["Tidal Flooding"],
-    "Desert": ["Heatstroke"],
-}
-
-
 INTEL_LEVELS = ["Minimal", "Low", "Medium", "High"]
 
 ADJECTIVES = ["Iron", "Shadow", "Crimson", "Phantom", "Silent", "Night", "Ghost", "Cold", "Obsidian"]
@@ -91,7 +81,6 @@ def infer_mission_type(objective_chain):
         return "Demolition"
     return "Unknown"
 
-
 def generate_codename():
     return f"Operation {random.choice(ADJECTIVES)} {random.choice(NOUNS)}"
 
@@ -99,15 +88,13 @@ def get_dynamic_loot(encounter_type, alert_level):
     stealth = ["Silenced Pistol", "Mini Drone", "EMP", "Holo Projector"]
     combat = ["Armor Plates", "Medkit", "Flashbang", "C4 Charge"]
     tech = ["Hacking Pad", "Signal Jammer", "EMP Mine"]
-    
+
     if alert_level < 30:
         if encounter_type == "stealth":
             return random.sample(stealth, k=1)
         elif encounter_type == "tech":
             return random.sample(tech, k=1)
     return random.sample(combat, k=1)
-
-# === Generator ===
 
 def generate_random_mission(index):
     location = random.choice(LOCATIONS)
@@ -118,11 +105,7 @@ def generate_random_mission(index):
     enemies = random.choice(ENEMY_TYPES)
     intel = random.choice(INTEL_LEVELS)
     name = generate_codename()
-    hazard = None
-    if terrain in TERRAIN_HAZARDS and random.random() < 0.3:  # 30% chance
-        hazard = random.choice(TERRAIN_HAZARDS[terrain])
 
-    # Create zones
     zone_names = ["Entry Point"] + [f"{step}" for step in objective_steps] + ["Extraction"]
     map_data = {}
 
@@ -131,18 +114,23 @@ def generate_random_mission(index):
         alert = random.randint(0, 100)
         loot = get_dynamic_loot(encounter_type, alert_level=alert)
         next_zones = [zone_names[i + 1]] if i + 1 < len(zone_names) else []
-        map_data[zname] = Zone(
+
+        enemy_pool = TERRAIN_ENEMIES.get(terrain, [])
+        zone_enemies = [enemy() for enemy in random.sample(enemy_pool, k=min(2, len(enemy_pool)))] if enemy_pool else []
+
+        z = Zone(
             name=zname,
             description=f"Zone Objective: {zname} — in {terrain} terrain.",
             encounter={"type": encounter_type} if zname != "Extraction" else None,
             loot=loot,
             next_zones=next_zones
         )
-        map_data[zname].hazard = hazard
+        z.enemies = zone_enemies
+        map_data[zname] = z
 
     mission_type = infer_mission_type(objective_steps)
     mission = Mission(name, ", ".join(objective_steps), location, difficulty, enemies, intel, terrain, terrain_effect)
     mission.terrain = terrain
     mission.terrain_effect = terrain_effect
-    mission.mission_type = mission_type 
+    mission.mission_type = mission_type
     return mission, map_data
