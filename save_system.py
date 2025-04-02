@@ -1,4 +1,5 @@
 import pickle
+import json
 import os
 
 SAVE_DIR = "saves"
@@ -25,3 +26,24 @@ def list_saves():
     if not os.path.exists(SAVE_DIR):
         return []
     return [f[:-4] for f in os.listdir(SAVE_DIR) if f.endswith(".pkl")]
+
+
+MISSION_DIR = "data"
+os.makedirs(MISSION_DIR, exist_ok=True)
+
+def get_mission_json_path():
+    return os.path.join(MISSION_DIR, "missions.json")
+
+
+def load_missions_from_json():
+    path = get_mission_json_path()
+    if not os.path.exists(path):
+        return {}
+    with open(path, "r") as f:
+        raw = json.load(f)
+        from mission import Mission  # to avoid circular imports
+        return {
+            name: Mission(name, data["objective"], data["location"], data["difficulty"],
+                          data["enemies"], data["intel_level"], data["terrain"], data["terrain_effect"])
+            for name, data in raw.items()
+        }

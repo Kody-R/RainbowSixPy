@@ -1,0 +1,14 @@
+{
+  "Operation Cold Whisper": {
+    "objective": "Gain access via roof, Take control of control room, Clear extraction zone",
+    "location": "Moscow, Russia",
+    "difficulty": "Medium",
+    "enemies": "PMC Rifleman",
+    "intel_level": "Medium",
+    "terrain": "Urban",
+    "terrain_effect": {
+      "tech_bonus": 1
+    },
+    "mission_type": "Unknown"
+  }
+}

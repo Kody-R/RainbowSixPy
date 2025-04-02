@@ -10,7 +10,7 @@ def load_json(path):
     with open(path, 'r') as f:
         return json.load(f)
 
-BASE_DIR = os.path.dirname(__file__)
+BASE_DIR = "data"
 LOCATION_PATH = os.path.join(BASE_DIR, "location.json")
 ENEMIES_PATH = os.path.join(BASE_DIR, "enemy.json")
 
@@ -67,6 +67,35 @@ MISSION_TYPES = {
     "Rescue": "🚑 Rescue",
     "Destroy": "🔥 Demolition"
 }
+
+MISSION_SAVE_PATH = os.path.join("data", "missions.json")
+
+def save_mission_to_json(mission):
+    # Load existing data
+    if os.path.exists(MISSION_SAVE_PATH):
+        with open(MISSION_SAVE_PATH, "r") as f:
+            data = json.load(f)
+    else:
+        data = {}
+
+    # Avoid duplicate save
+    if mission.name in data:
+        return
+
+    # Save new mission
+    data[mission.name] = {
+        "objective": mission.objective,
+        "location": mission.location,
+        "difficulty": mission.difficulty,
+        "enemies": mission.enemies,
+        "intel_level": mission.intel_level,
+        "terrain": mission.terrain,
+        "terrain_effect": mission.terrain_effect,
+        "mission_type": getattr(mission, "mission_type", "Unknown")
+    }
+
+    with open(MISSION_SAVE_PATH, "w") as f:
+        json.dump(data, f, indent=2)
 
 def infer_mission_type(objective_chain):
     first = objective_chain[0].lower()
@@ -139,4 +168,6 @@ def generate_random_mission(index):
     mission.terrain = terrain
     mission.terrain_effect = terrain_effect
     mission.mission_type = mission_type
+
+    save_mission_to_json(mission)
     return mission, map_data
