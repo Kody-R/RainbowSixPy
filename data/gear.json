@@ -1,0 +1,493 @@
+[
+  {
+    "name": "Adrenaline Shot",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "boost stamina",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Armor Plates",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "reduce damage",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "AR-33",
+    "type": "primary",
+    "noise": 6,
+    "damage": 8,
+    "effect": null,
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Breach Charge",
+    "type": "utility",
+    "noise": 10,
+    "damage": 0,
+    "effect": "force entry",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "C4 Charge",
+    "type": "utility",
+    "noise": 10,
+    "damage": 0,
+    "effect": "high-explosive",
+    "weight": 3,
+    "rarity": "Epic",
+    "role_lock": "Assault"
+  },
+  {
+    "name": "Desert Eagle",
+    "type": "sidearm",
+    "noise": 7,
+    "damage": 6,
+    "effect": "high power",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Drone",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "scout",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "EMP",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "disable electronics",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "EMP Mine",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "trap for electronics",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Five-Seven",
+    "type": "sidearm",
+    "noise": 2,
+    "damage": 4,
+    "effect": "armor piercing",
+    "weight": 1,
+    "rarity": "Rare",
+    "role_lock": null
+  },
+  {
+    "name": "Flashbang",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "stun",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Hacking Pad",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "multi-system override",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Holo Projector",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "decoy",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "M4A1",
+    "type": "primary",
+    "noise": 5,
+    "damage": 7,
+    "effect": null,
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Medkit",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "heal",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Mini Drone",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "reveal enemies",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "MK18 CQBR",
+    "type": "primary",
+    "noise": 5,
+    "damage": 8,
+    "effect": "compact assault",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": "Assault"
+  },
+  {
+    "name": "Motion Sensor",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "detect movement",
+    "weight": 1,
+    "rarity": "Rare",
+    "role_lock": "Recon"
+  },
+  {
+    "name": "Nano Medkit",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "heal + revive",
+    "weight": 2,
+    "rarity": "Legendary",
+    "role_lock": "Medic"
+  },
+  {
+    "name": "Portable Cover",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "reduce ranged damage",
+    "weight": 3,
+    "rarity": "Rare",
+    "role_lock": "Defense"
+  },
+  {
+    "name": "Signal Jammer",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "block sensors",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Silenced Pistol",
+    "type": "sidearm",
+    "noise": 2,
+    "damage": 4,
+    "effect": null,
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Smoke Grenade",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "line-of-sight blocker",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "SMG",
+    "type": "primary",
+    "noise": 4,
+    "damage": 6,
+    "effect": null,
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Sniper Rifle",
+    "type": "primary",
+    "noise": 8,
+    "damage": 10,
+    "effect": null,
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Sentry Gun",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "auto-fire defense",
+    "weight": 4,
+    "rarity": "Legendary",
+    "role_lock": "Defense"
+  },
+  {
+    "name": "SPAS-12",
+    "type": "primary",
+    "noise": 9,
+    "damage": 10,
+    "effect": "blast control",
+    "weight": 3,
+    "rarity": "Epic",
+    "role_lock": "Assault"
+  },
+  {
+    "name": "Suppressed SMG",
+    "type": "primary",
+    "noise": 2,
+    "damage": 5,
+    "effect": "silent fire",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Tactical Shotgun",
+    "type": "primary",
+    "noise": 8,
+    "damage": 9,
+    "effect": "breach boost",
+    "weight": 3,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Vector .45",
+    "type": "primary",
+    "noise": 3,
+    "damage": 6,
+    "effect": "rapid fire",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": "Recon"
+  },
+  
+   {
+    "name": "SCAR-H",
+    "type": "primary",
+    "noise": 6,
+    "damage": 9,
+    "effect": "high-caliber impact",
+    "weight": 3,
+    "rarity": "Rare",
+    "role_lock": "Assault"
+  },
+  {
+    "name": "M1911",
+    "type": "sidearm",
+    "noise": 4,
+    "damage": 5,
+    "effect": "classic sidearm",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "AS VAL",
+    "type": "primary",
+    "noise": 2,
+    "damage": 7,
+    "effect": "integrated suppressor",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Recon"
+  },
+  {
+    "name": "P90",
+    "type": "primary",
+    "noise": 3,
+    "damage": 6,
+    "effect": "high-capacity burst",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Revolver .357",
+    "type": "sidearm",
+    "noise": 6,
+    "damage": 7,
+    "effect": "heavy stopping power",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": null
+  },
+  {
+    "name": "Recon Binoculars",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "mark targets",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": "Recon"
+  },
+  {
+    "name": "Thermal Scanner",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "detect through smoke",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Adrenal Booster",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "temporary invulnerability",
+    "weight": 2,
+    "rarity": "Legendary",
+    "role_lock": "Medic"
+  },
+  {
+    "name": "Spike Trap",
+    "type": "utility",
+    "noise": 0,
+    "damage": 3,
+    "effect": "slow and wound enemies",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": "Defense"
+  },
+  {
+    "name": "Tactical Beacon",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "team respawn point",
+    "weight": 3,
+    "rarity": "Legendary",
+    "role_lock": null
+  },
+  {
+    "name": "UMP-45",
+    "type": "primary",
+    "noise": 4,
+    "damage": 6,
+    "effect": "controlled recoil",
+    "weight": 2,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "Glock 19",
+    "type": "sidearm",
+    "noise": 3,
+    "damage": 4,
+    "effect": "lightweight standard issue",
+    "weight": 1,
+    "rarity": "Common",
+    "role_lock": null
+  },
+  {
+    "name": "AA-12",
+    "type": "primary",
+    "noise": 9,
+    "damage": 10,
+    "effect": "automatic shotgun",
+    "weight": 4,
+    "rarity": "Epic",
+    "role_lock": "Assault"
+  },
+  {
+    "name": "VSS Vintorez",
+    "type": "primary",
+    "noise": 1,
+    "damage": 7,
+    "effect": "integrated suppressor + scope",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Recon"
+  },
+  {
+    "name": "Portable Radar",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "detect enemy movement",
+    "weight": 2,
+    "rarity": "Rare",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Reinforced Shield",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "absorb frontal damage",
+    "weight": 3,
+    "rarity": "Epic",
+    "role_lock": "Defense"
+  },
+  {
+    "name": "Combat Stim Kit",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "boost team stats",
+    "weight": 2,
+    "rarity": "Epic",
+    "role_lock": "Medic"
+  },
+  {
+    "name": "EMP Pulse Glove",
+    "type": "gadget",
+    "noise": 0,
+    "damage": 0,
+    "effect": "short-range disable electronics",
+    "weight": 1,
+    "rarity": "Rare",
+    "role_lock": "Tech"
+  },
+  {
+    "name": "Camouflage Cloak",
+    "type": "utility",
+    "noise": 0,
+    "damage": 0,
+    "effect": "temporary invisibility",
+    "weight": 2,
+    "rarity": "Legendary",
+    "role_lock": "Infiltrator"
+  }
+]
