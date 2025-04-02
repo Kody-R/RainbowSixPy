@@ -1,0 +1,66 @@
+{
+    "Extraction": [
+            "Infiltrate compound",
+            "Secure server room",
+            "Extract via helipad",
+            "Breach facility gate",
+            "Disable comms array",
+            "Exfil via convoy",
+            "Intercept smuggler convoy",
+            "Recover stolen tech",
+            "Call in extraction"
+    ],
+    "Sabotage": [
+            "Sabotage radar array",
+            "Evade patrols",
+            "Destroy weapons cache",
+            "Jam radar dish",
+            "Board enemy vehicle",
+            "Plant explosive and escape"
+    ],
+    "Assault": [
+            "Neutralize HVT",
+            "Plant tracking device",
+            "Escape undetected",
+            "Secure forward outpost",
+            "Establish signal beacon",
+            "Hold position until evac",
+            "Gain access via roof",
+            "Take control of control room",
+            "Clear extraction zone"
+    ],
+    "Cyber": [
+
+            "Hack drone uplink",
+            "Retrieve intel",
+            "Regroup at rendezvous",
+            "Interrogate captured officer",
+            "Secure data terminal",
+            "Escape through sewer system",
+            "Hack local network",
+            "Upload virus",
+            "Escape before lockdown"
+
+    ],
+    "Rescue": [
+            "Locate hostage",
+            "Disarm perimeter traps",
+            "Extract to safehouse"
+    ],
+    "Demolition": [
+            "Find and tag weapons cache",
+            "Neutralize defenders",
+            "Mark for airstrike"
+
+    ],
+    "Stealth": [
+
+            "Disable surveillance grid",
+            "Plant false intel",
+            "Exit without alerting guards",
+            "Scout facility",
+            "Map patrol routes",
+            "Eliminate key targets"
+
+    ]
+}

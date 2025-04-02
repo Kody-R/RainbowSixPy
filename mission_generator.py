@@ -1,9 +1,27 @@
 import random
-from enemy import Enemy, TERRAIN_ENEMIES  # Import both enemy class and terrain pools
+import json
+import os
+
 from mission import Mission
 from mission_map import Zone
 
-# === Data ===
+# === Load External JSONs ===
+def load_json(path):
+    with open(path, 'r') as f:
+        return json.load(f)
+
+BASE_DIR = os.path.dirname(__file__)
+LOCATION_PATH = os.path.join(BASE_DIR, "location.json")
+ENEMIES_PATH = os.path.join(BASE_DIR, "enemy.json")
+
+LOCATION_ENVIRONMENTS = load_json(LOCATION_PATH)
+RAW_ENEMIES = load_json(ENEMIES_PATH)
+
+# === Derived Mappings ===
+LOCATIONS = [loc for terrain_locs in LOCATION_ENVIRONMENTS.values() for loc in terrain_locs]
+location_to_terrain = {
+    loc: terrain for terrain, locs in LOCATION_ENVIRONMENTS.items() for loc in locs
+}
 
 ENVIRONMENTS = {
     "Urban": {"tech_bonus": 1},
@@ -13,43 +31,28 @@ ENVIRONMENTS = {
     "Mountain": {"stamina_bonus": 1, "marksmanship_bonus": 1},
     "Coastal": {},
     "Desert": {"tech_penalty": 1, "marksmanship_bonus": 1},
-}
-
-LOCATIONS = [
-    "Amazon Jungle Outpost", "Arctic Research Base", "Oil Rig, North Sea",
-    "Kremlin, Moscow", "Eiffel Tower, Paris", "UN HQ, New York",
-    "Colosseum, Rome", "Pentagon, USA", "Cargo Ship - Pacific",
-    "Underground Bunker, Iceland", "Cheyenne Mountain Complex",
-    "Island Fortress, Philippines", "Desert Base, Libya"
-]
-
-LOCATION_ENVIRONMENTS = {
-    "Amazon Jungle Outpost": "Jungle",
-    "Arctic Research Base": "Arctic",
-    "Oil Rig, North Sea": "Coastal",
-    "Kremlin, Moscow": "Urban",
-    "Eiffel Tower, Paris": "Urban",
-    "UN HQ, New York": "Urban",
-    "Colosseum, Rome": "Urban",
-    "Pentagon, USA": "Underground",
-    "Cargo Ship - Pacific": "Coastal",
-    "Underground Bunker, Iceland": "Underground",
-    "Cheyenne Mountain Complex": "Mountain",
-    "Island Fortress, Philippines": "Coastal",
-    "Desert Base, Libya": "Desert"
+    "Transit": {"tech_bonus": 1,"stamina_penalty": 1,"stealth_penalty": 1},
+    "Entertainment": {"stealth_bonus": 1,"marksmanship_penalty": 1,"leadership_bonus": 1}
 }
 
 OBJECTIVE_CHAINS = [
     ["Infiltrate compound", "Secure server room", "Extract via helipad"],
     ["Sabotage radar array", "Evade patrols", "Destroy weapons cache"],
     ["Neutralize HVT", "Plant tracking device", "Escape undetected"],
-    ["Hack drone uplink", "Retrieve intel", "Regroup at rendezvous"]
+    ["Hack drone uplink", "Retrieve intel", "Regroup at rendezvous"],
+    ["Breach facility gate", "Disable comms array", "Exfil via convoy"],
+    ["Interrogate captured officer", "Secure data terminal", "Escape through sewer system"],
+    ["Locate hostage", "Disarm perimeter traps", "Extract to safehouse"],
+    ["Disable surveillance grid", "Plant false intel", "Exit without alerting guards"],
+    ["Secure forward outpost", "Establish signal beacon", "Hold position until evac"],
+    ["Intercept smuggler convoy", "Recover stolen tech", "Call in extraction"],
+    ["Hack local network", "Upload virus", "Escape before lockdown"],
+    ["Find and tag weapons cache", "Neutralize defenders", "Mark for airstrike"],
+    ["Gain access via roof", "Take control of control room", "Clear extraction zone"],
+    ["Jam radar dish", "Board enemy vehicle", "Plant explosive and escape"],
+    ["Scout facility", "Map patrol routes", "Eliminate key targets"]
 ]
 
-ENEMY_TYPES = [
-    "PMC Guards", "Narco Militia", "Corrupt Soldiers", "Tech Cultists",
-    "Urban Terror Cell", "Biohazard Researchers", "Smugglers", "AI Defense Grid"
-]
 
 INTEL_LEVELS = ["Minimal", "Low", "Medium", "High"]
 
@@ -57,7 +60,7 @@ ADJECTIVES = ["Iron", "Shadow", "Crimson", "Phantom", "Silent", "Night", "Ghost"
 NOUNS = ["Fang", "Storm", "Blade", "Whisper", "Hammer", "Pulse", "Hawk", "Net", "Spire", "Warden"]
 
 MISSION_TYPES = {
-    "Extract": "🛩️ Extraction",
+    "Extract": "🚁️ Extraction",
     "Sabotage": "💣 Sabotage",
     "Hack": "💻 Cyber",
     "Neutralize": "🔫 Assault",
@@ -98,11 +101,15 @@ def get_dynamic_loot(encounter_type, alert_level):
 
 def generate_random_mission(index):
     location = random.choice(LOCATIONS)
-    terrain = LOCATION_ENVIRONMENTS.get(location, "Urban")
+    terrain = location_to_terrain.get(location, "Urban")
     terrain_effect = ENVIRONMENTS.get(terrain, {})
     objective_steps = random.choice(OBJECTIVE_CHAINS)
     difficulty = random.choice(["Medium", "Hard", "Very Hard"])
-    enemies = random.choice(ENEMY_TYPES)
+
+    # Enemy name (basic summary string)
+    enemy_pool = RAW_ENEMIES.get(terrain, {}).get("regular", [])
+    enemies = random.choice(enemy_pool)["name"] if enemy_pool else "Unknown Hostiles"
+
     intel = random.choice(INTEL_LEVELS)
     name = generate_codename()
 
@@ -115,8 +122,7 @@ def generate_random_mission(index):
         loot = get_dynamic_loot(encounter_type, alert_level=alert)
         next_zones = [zone_names[i + 1]] if i + 1 < len(zone_names) else []
 
-        enemy_pool = TERRAIN_ENEMIES.get(terrain, [])
-        zone_enemies = [enemy() for enemy in random.sample(enemy_pool, k=min(2, len(enemy_pool)))] if enemy_pool else []
+        zone_enemies = random.sample(enemy_pool, k=min(2, len(enemy_pool))) if enemy_pool else []
 
         z = Zone(
             name=zname,
