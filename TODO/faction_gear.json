@@ -1,0 +1,1042 @@
+{
+  "Iron Banner Syndicate": [
+    {
+      "name": "Industrial Riot Shield",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "blocks frontal damage",
+      "weight": 3,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Forged Molotov",
+      "type": "utility",
+      "noise": 7,
+      "damage": 0,
+      "effect": "burns targets in a cone",
+      "weight": 2,
+      "rarity": "Uncommon",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Steelworker's Visor",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "protects from flash effects",
+      "weight": 1,
+      "rarity": "Common",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Banner Uplink Beacon",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "calls armored drone for backup",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Hazmat Spray",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "nullifies gas-based attacks",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    }
+  ],
+  "NeuroHex Collective": [
+    {
+      "name": "Neuro Splicer",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "hacks two devices at once",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Pulse Dampener",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "protects squad from EMP",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Data Mask",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "scrambles facial recognition",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Mindjack Stim",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "forces enemy AI into confusion",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Signal Feedback Loop",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "replays last successful hack",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Tech"
+    }
+  ],
+  "Red Dust Confederacy": [
+    {
+      "name": "Duststorm Charge",
+      "type": "utility",
+      "noise": 6,
+      "damage": 0,
+      "effect": "causes cloud cover and confusion",
+      "weight": 2,
+      "rarity": "Uncommon",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Rust Shard Grenade",
+      "type": "utility",
+      "noise": 5,
+      "damage": 0,
+      "effect": "poison + bleed over time",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Warlord's Bone Charm",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "prevents morale loss",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Tribal Camo Wrap",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "invisible in desert zones",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Machete Flask",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "restores stamina",
+      "weight": 1,
+      "rarity": "Common",
+      "role_lock": "Any"
+    }
+  ],
+  "Velvet Accord": [
+    {
+      "name": "Chameleon Blazer",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "mimics enemy uniform",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Flashbulb Perfume",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "blinds enemies briefly",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "VIP Pass",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "bypasses ID scans",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Mic'd Ring",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "eavesdrops on enemy plans",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Velvet Cape",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "reduces visibility to cameras",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Support"
+    }
+  ],
+  "Iron Veil Authority": [
+    {
+      "name": "Checkpoint Badge",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "auto-opens locked gates",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Transit Blaster",
+      "type": "utility",
+      "noise": 3,
+      "damage": 2,
+      "effect": "stuns at short range",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Surveillance Feed Lens",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "displays nearby cameras",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Magnetic Clamps",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "stick to moving trains or metal",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Customs Tracker",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "shows contraband routes",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    }
+  ],
+  "Ordo Vanta": [
+    {
+      "name": "Ancient Signal Blade",
+      "type": "utility",
+      "noise": 0,
+      "damage": 3,
+      "effect": "reveals hidden units",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Blacksite Cloak",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "conceals entire squad",
+      "weight": 2,
+      "rarity": "Legendary",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Order Sigil Amulet",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants 1 extra action at mission start",
+      "weight": 1,
+      "rarity": "Legendary",
+      "role_lock": "Any"
+    },
+    {
+      "name": "Vanta Reliquary",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts passive XP gain",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Void Scroll",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "silences an enemy for 2 turns",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    }
+  ],
+  "SYN-Eclipse": [
+    {
+      "name": "Logic Crash Implant",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "confuses AI enemies",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Neural Snare",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "stuns cybernetic targets",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Black Code Cuff",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "bypasses enemy encryption",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Overclock Patch",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts AP for 2 turns",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Support"
+    },
+    {
+      "name": "EMP Lace Gloves",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "disables enemy shields on touch",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    }
+  ],
+  "The Pale Hand": [
+    {
+      "name": "Ashvein Blade",
+      "type": "utility",
+      "noise": 0,
+      "damage": 4,
+      "effect": "infects enemy with toxin",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Whisper Mask",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "reduces enemy morale in radius",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Erasure Beacon",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "removes enemy buffs",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Silent Fang Toxin",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "coats weapon for poison over time",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Twilight Charm",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants stealth on low health",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Any"
+    }
+  ],
+  "Black Reef Conglomerate": [
+    {
+      "name": "Security Override Key",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "controls enemy turret",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Insider\u2019s Briefcase",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "contains high-value loot",
+      "weight": 2,
+      "rarity": "Legendary",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Bribe Cache",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "avoids combat with low-level guards",
+      "weight": 2,
+      "rarity": "Uncommon",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Contractor\u2019s Scope",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "increases reward payout on mission",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Any"
+    },
+    {
+      "name": "Pharma Stimulant",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "restores health over 3 turns",
+      "weight": 1,
+      "rarity": "Common",
+      "role_lock": "Support"
+    }
+  ],
+  "Nova Hydra Directive": [
+    {
+      "name": "Targeting Uplink Module",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "squadwide accuracy boost",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Scorched Earth Beacon",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "destroys cover in blast radius",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Command Algorithm",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "pre-battle buff to initiative",
+      "weight": 1,
+      "rarity": "Legendary",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Retro Tactical Scope",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants precision aim on first shot",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Field AI Plug-in",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "automates a second gadget use",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    }
+  ],
+  "Crimson Dao Triad": [
+    {
+      "name": "Dragonbone Blade",
+      "type": "utility",
+      "noise": 0,
+      "damage": 4,
+      "effect": "critical hits on first strike",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Silksteel Coat",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "reduced detection chance",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Triad Insignia Chip",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants passive income boost",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Black Jade Throwers",
+      "type": "utility",
+      "noise": 2,
+      "damage": 2,
+      "effect": "applies bleed over time",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Forbidden Scroll",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "casts fear on enemies in radius",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Support"
+    }
+  ],
+  "Zvezda Spetsgruppa": [
+    {
+      "name": "Permafrost Rifle",
+      "type": "utility",
+      "noise": 0,
+      "damage": 3,
+      "effect": "freezes target for 1 turn",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Cold War Ration Kit",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "restores health and morale",
+      "weight": 1,
+      "rarity": "Common",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Spetsnaz Thermoptic Cloak",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "camouflage in snow",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "CryoCharge Mine",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "immobilizes enemy in trap",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Siberian Talon Scope",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "extends sniper range",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Recon"
+    }
+  ],
+  "Les Loups Gris": [
+    {
+      "name": "Phantom Mask",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants identity concealment",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Director's Cut Flashbang",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "blinds and dazes",
+      "weight": 1,
+      "rarity": "Common",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Stagecraft Pistol",
+      "type": "utility",
+      "noise": 2,
+      "damage": 3,
+      "effect": "bonus damage when flanking",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Scripted Disguise Kit",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "pass through NPCs unnoticed",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Smoke & Mirrors Emitter",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "summons decoy image",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    }
+  ],
+  "Black Nile Pact": [
+    {
+      "name": "Scarab Gauntlet",
+      "type": "utility",
+      "noise": 0,
+      "damage": 4,
+      "effect": "adds poison on melee hit",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Desert Shroud Robes",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "reduces detection in open terrain",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Ankh Signal Prism",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts signal strength",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Tomb Dust Vial",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "confuses organic enemies",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Sunburn Amulet",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts heat resistance",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Any"
+    }
+  ],
+  "Kong\u014d-Kai": [
+    {
+      "name": "Shuriken Disruptor",
+      "type": "utility",
+      "noise": 0,
+      "damage": 2,
+      "effect": "silences electronics on hit",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Cyber-Katana",
+      "type": "utility",
+      "noise": 0,
+      "damage": 5,
+      "effect": "crit damage vs robotic enemies",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Honorguard Field Cloak",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts defense when isolated",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Script Chipset",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "auto-runs subroutines",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Bamboo Resonator",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "stuns nearby enemies on activation",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    }
+  ],
+  "Jaguar Azul": [
+    {
+      "name": "Jungle Fang Dagger",
+      "type": "utility",
+      "noise": 0,
+      "damage": 4,
+      "effect": "bonus damage in jungle zones",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Azul Smoke Bomb",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "grants instant concealment",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Obsidian Idol",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "fear aura in combat",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Glyph Bandages",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "regenerates health slowly",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Sunleaf Camouflage",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "invisible in foliage",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    }
+  ],
+  "Stahl Krieger": [
+    {
+      "name": "Panzershock Baton",
+      "type": "utility",
+      "noise": 0,
+      "damage": 3,
+      "effect": "stuns on hit",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Iron Helm Visor",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "resists flash and gas",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Any"
+    },
+    {
+      "name": "Krieg Beacon",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "calls armored drone support",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Axis Grenade Pack",
+      "type": "utility",
+      "noise": 5,
+      "damage": 0,
+      "effect": "area suppression and morale debuff",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Warcry Module",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "boosts squad damage output",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    }
+  ],
+  "Red Veldt Legion": [
+    {
+      "name": "Bone Saw Rifle",
+      "type": "utility",
+      "noise": 3,
+      "damage": 4,
+      "effect": "bleeds targets over time",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Salvage Plating",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "resists shrapnel and melee",
+      "weight": 2,
+      "rarity": "Uncommon",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Warlord's Signal Horn",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "rallies squad with temp buff",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Rubble Drone",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "clears mines and traps",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Dust Cloak",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "conceals movement in wastelands",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    }
+  ],
+  "Shadow Lotus Front": [
+    {
+      "name": "Viper Fang Blades",
+      "type": "utility",
+      "noise": 0,
+      "damage": 4,
+      "effect": "poison + silence",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Camphor Smoke Pellet",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "forces enemy disorientation",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Support"
+    },
+    {
+      "name": "Jungle Tracker Mask",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "enhanced detection in fog",
+      "weight": 1,
+      "rarity": "Uncommon",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Silent Flower Charm",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "negates first detection",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Infiltrator"
+    },
+    {
+      "name": "Leafwalker Harness",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "ignore terrain movement penalties",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    }
+  ],
+  "Arktikos Valkyries": [
+    {
+      "name": "Glacial Halberd",
+      "type": "utility",
+      "noise": 0,
+      "damage": 5,
+      "effect": "slow effect on enemies",
+      "weight": 2,
+      "rarity": "Epic",
+      "role_lock": "Assault"
+    },
+    {
+      "name": "Icefang Armor",
+      "type": "utility",
+      "noise": 0,
+      "damage": 0,
+      "effect": "resists cold and suppressive fire",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Defense"
+    },
+    {
+      "name": "Frost Glider Rig",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "gain mobility on ice terrain",
+      "weight": 2,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    },
+    {
+      "name": "Aurora Sigil",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "stuns robotic enemies",
+      "weight": 1,
+      "rarity": "Epic",
+      "role_lock": "Tech"
+    },
+    {
+      "name": "Cryoflare Device",
+      "type": "gadget",
+      "noise": 0,
+      "damage": 0,
+      "effect": "reveals cloaked units",
+      "weight": 1,
+      "rarity": "Rare",
+      "role_lock": "Recon"
+    }
+  ]
+}

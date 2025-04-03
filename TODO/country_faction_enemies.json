@@ -1,0 +1,432 @@
+{
+  "Crimson Dao Triad": {
+    "regular": [
+      {
+        "name": "Triad Enforcer",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "patrol"
+      },
+      {
+        "name": "Red Circuit Hacker",
+        "type": "Support",
+        "hp": 18,
+        "damage": 4,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Ghostblade Assassin",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 9,
+        "behavior": "flank"
+      },
+      {
+        "name": "Cyber-Monk Sentry",
+        "type": "Elite",
+        "hp": 26,
+        "damage": 7,
+        "behavior": "overwatch"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Obsidian Dragon",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 11,
+        "behavior": "control"
+      }
+    ]
+  },
+  "Zvezda Spetsgruppa": {
+    "regular": [
+      {
+        "name": "Frosttrooper",
+        "type": "Standard",
+        "hp": 23,
+        "damage": 6,
+        "behavior": "hold_line"
+      },
+      {
+        "name": "Permafrost Sapper",
+        "type": "Support",
+        "hp": 19,
+        "damage": 5,
+        "behavior": "trap"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Glacier Operative",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 8,
+        "behavior": "stealth"
+      },
+      {
+        "name": "Blizzard Vanguard",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 9,
+        "behavior": "rush"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Commander Krylov",
+        "type": "Boss",
+        "hp": 52,
+        "damage": 12,
+        "behavior": "suppress"
+      }
+    ]
+  },
+  "Les Loups Gris": {
+    "regular": [
+      {
+        "name": "Phantom Dancer",
+        "type": "Standard",
+        "hp": 20,
+        "damage": 5,
+        "behavior": "disorient"
+      },
+      {
+        "name": "Graffiti Sniper",
+        "type": "Sniper",
+        "hp": 18,
+        "damage": 8,
+        "behavior": "mark"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Stage Trickster",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 7,
+        "behavior": "disguise"
+      },
+      {
+        "name": "Illusionist Operative",
+        "type": "Elite",
+        "hp": 25,
+        "damage": 6,
+        "behavior": "confuse"
+      }
+    ],
+    "boss": [
+      {
+        "name": "The Director",
+        "type": "Boss",
+        "hp": 48,
+        "damage": 10,
+        "behavior": "manipulate"
+      }
+    ]
+  },
+  "Black Nile Pact": {
+    "regular": [
+      {
+        "name": "Tomb Sentinel",
+        "type": "Standard",
+        "hp": 21,
+        "damage": 5,
+        "behavior": "guard"
+      },
+      {
+        "name": "Sand Ritualist",
+        "type": "Support",
+        "hp": 17,
+        "damage": 4,
+        "behavior": "curse"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Scarab Lancer",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 9,
+        "behavior": "charge"
+      },
+      {
+        "name": "Obelisk Warden",
+        "type": "Elite",
+        "hp": 30,
+        "damage": 8,
+        "behavior": "shield"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Jackal King",
+        "type": "Boss",
+        "hp": 51,
+        "damage": 12,
+        "behavior": "dominate"
+      }
+    ]
+  },
+  "Kong\u014d-Kai": {
+    "regular": [
+      {
+        "name": "Kyoukai Operative",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "sneak"
+      },
+      {
+        "name": "Net Disruptor",
+        "type": "Support",
+        "hp": 18,
+        "damage": 4,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Zero-Blade Executioner",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 10,
+        "behavior": "ambush"
+      },
+      {
+        "name": "Codebreaker Monk",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 7,
+        "behavior": "override"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Circuit Shogun",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 11,
+        "behavior": "silence"
+      }
+    ]
+  },
+  "Jaguar Azul": {
+    "regular": [
+      {
+        "name": "Jungle Skirmisher",
+        "type": "Standard",
+        "hp": 21,
+        "damage": 6,
+        "behavior": "ambush"
+      },
+      {
+        "name": "Poppy Fiend",
+        "type": "Support",
+        "hp": 19,
+        "damage": 5,
+        "behavior": "poison"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Smoke Panther",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 8,
+        "behavior": "smoke"
+      },
+      {
+        "name": "Jaguar Shaman",
+        "type": "Elite",
+        "hp": 26,
+        "damage": 6,
+        "behavior": "hallucinate"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Xibalba Warlord",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 11,
+        "behavior": "intimidate"
+      }
+    ]
+  },
+  "Stahl Krieger": {
+    "regular": [
+      {
+        "name": "Trench Gunner",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "patrol"
+      },
+      {
+        "name": "Cog Sapper",
+        "type": "Support",
+        "hp": 18,
+        "damage": 5,
+        "behavior": "engineer"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Iron Wolf",
+        "type": "Elite",
+        "hp": 30,
+        "damage": 9,
+        "behavior": "charge"
+      },
+      {
+        "name": "Panzergeist",
+        "type": "Elite",
+        "hp": 32,
+        "damage": 8,
+        "behavior": "barrage"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Colonel Eisenhart",
+        "type": "Boss",
+        "hp": 53,
+        "damage": 12,
+        "behavior": "fortify"
+      }
+    ]
+  },
+  "Red Veldt Legion": {
+    "regular": [
+      {
+        "name": "Veldt Raider",
+        "type": "Standard",
+        "hp": 20,
+        "damage": 6,
+        "behavior": "rush"
+      },
+      {
+        "name": "Ash Driller",
+        "type": "Support",
+        "hp": 17,
+        "damage": 5,
+        "behavior": "collapse"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Dust Seeker",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 8,
+        "behavior": "track"
+      },
+      {
+        "name": "Crater Marauder",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 7,
+        "behavior": "loot"
+      }
+    ],
+    "boss": [
+      {
+        "name": "General Tau",
+        "type": "Boss",
+        "hp": 49,
+        "damage": 11,
+        "behavior": "rout"
+      }
+    ]
+  },
+  "Shadow Lotus Front": {
+    "regular": [
+      {
+        "name": "Jungle Ghost",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "hide"
+      },
+      {
+        "name": "Mist Sniper",
+        "type": "Sniper",
+        "hp": 16,
+        "damage": 9,
+        "behavior": "mark"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Green Viper",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 8,
+        "behavior": "strike"
+      },
+      {
+        "name": "Lotus Stalker",
+        "type": "Elite",
+        "hp": 26,
+        "damage": 7,
+        "behavior": "vanish"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Rainforest Ghost",
+        "type": "Boss",
+        "hp": 48,
+        "damage": 10,
+        "behavior": "haunt"
+      }
+    ]
+  },
+  "Arktikos Valkyries": {
+    "regular": [
+      {
+        "name": "Frost Guard",
+        "type": "Standard",
+        "hp": 23,
+        "damage": 5,
+        "behavior": "hold"
+      },
+      {
+        "name": "Glacier Scout",
+        "type": "Support",
+        "hp": 19,
+        "damage": 4,
+        "behavior": "slow"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Icehuntress",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 9,
+        "behavior": "track"
+      },
+      {
+        "name": "Glacier Warden",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 8,
+        "behavior": "freeze"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Frost Valkyrie",
+        "type": "Boss",
+        "hp": 51,
+        "damage": 12,
+        "behavior": "shatter"
+      }
+    ]
+  }
+}

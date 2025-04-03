@@ -1,0 +1,518 @@
+{
+  "Urban": {
+    "regular": [
+      {
+        "name": "Riot Enforcer",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "crowd_control"
+      },
+      {
+        "name": "Street Hacker",
+        "type": "Support",
+        "hp": 15,
+        "damage": 4,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Tactical Drone Swarm",
+        "type": "Drone",
+        "hp": 20,
+        "damage": 8,
+        "behavior": "overwatch"
+      },
+      {
+        "name": "Blacksite Specialist",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 9,
+        "behavior": "stealth_entry"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Mayor Claymore",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 10,
+        "behavior": "incite"
+      }
+    ]
+  },
+  "Jungle": {
+    "regular": [
+      {
+        "name": "Swamp Guerilla",
+        "type": "Standard",
+        "hp": 20,
+        "damage": 6,
+        "behavior": "ambush"
+      },
+      {
+        "name": "Jungle Signalman",
+        "type": "Support",
+        "hp": 16,
+        "damage": 4,
+        "behavior": "boost"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Canopy Lurker",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 9,
+        "behavior": "flank"
+      },
+      {
+        "name": "Trap Shaman",
+        "type": "Support",
+        "hp": 24,
+        "damage": 5,
+        "behavior": "curse"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Vinefang the Tracker",
+        "type": "Boss",
+        "hp": 46,
+        "damage": 9,
+        "behavior": "snare"
+      }
+    ]
+  },
+  "Arctic": {
+    "regular": [
+      {
+        "name": "Ice Sapper",
+        "type": "Support",
+        "hp": 18,
+        "damage": 5,
+        "behavior": "freeze"
+      },
+      {
+        "name": "Tundra Spotter",
+        "type": "Sniper",
+        "hp": 15,
+        "damage": 8,
+        "behavior": "mark"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Frostbreak Vanguard",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 9,
+        "behavior": "break_cover"
+      },
+      {
+        "name": "Cryo Saboteur",
+        "type": "Support",
+        "hp": 26,
+        "damage": 6,
+        "behavior": "jam"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Empress Borealis",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 10,
+        "behavior": "frostwave"
+      }
+    ]
+  },
+  "Underground": {
+    "regular": [
+      {
+        "name": "Subway Infiltrator",
+        "type": "Standard",
+        "hp": 20,
+        "damage": 6,
+        "behavior": "sneak"
+      },
+      {
+        "name": "Gas Vent Operator",
+        "type": "Support",
+        "hp": 17,
+        "damage": 4,
+        "behavior": "poison"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Lurking Miner",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 8,
+        "behavior": "collapse"
+      },
+      {
+        "name": "Tunnel Scout",
+        "type": "Sniper",
+        "hp": 23,
+        "damage": 10,
+        "behavior": "scout"
+      }
+    ],
+    "boss": [
+      {
+        "name": "King of the Depths",
+        "type": "Boss",
+        "hp": 49,
+        "damage": 11,
+        "behavior": "burrow"
+      }
+    ]
+  },
+  "Mountain": {
+    "regular": [
+      {
+        "name": "Snowline Sentry",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "hold_position"
+      },
+      {
+        "name": "Crag Technician",
+        "type": "Support",
+        "hp": 18,
+        "damage": 5,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Windblade Assassin",
+        "type": "Elite",
+        "hp": 27,
+        "damage": 9,
+        "behavior": "flank"
+      },
+      {
+        "name": "Rockslide Sapper",
+        "type": "Elite",
+        "hp": 30,
+        "damage": 7,
+        "behavior": "trap"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Echo of the Peaks",
+        "type": "Boss",
+        "hp": 48,
+        "damage": 10,
+        "behavior": "rebound"
+      }
+    ]
+  },
+  "Coastal": {
+    "regular": [
+      {
+        "name": "Dock Gunner",
+        "type": "Standard",
+        "hp": 21,
+        "damage": 6,
+        "behavior": "patrol"
+      },
+      {
+        "name": "Radio Disruptor",
+        "type": "Support",
+        "hp": 17,
+        "damage": 4,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Tideblade Raider",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 8,
+        "behavior": "board"
+      },
+      {
+        "name": "Reef Technician",
+        "type": "Support",
+        "hp": 24,
+        "damage": 5,
+        "behavior": "boost"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Commander Surf",
+        "type": "Boss",
+        "hp": 46,
+        "damage": 11,
+        "behavior": "tidal_push"
+      }
+    ]
+  },
+  "Desert": {
+    "regular": [
+      {
+        "name": "Dune Scout",
+        "type": "Standard",
+        "hp": 20,
+        "damage": 6,
+        "behavior": "patrol"
+      },
+      {
+        "name": "Signal Jammer",
+        "type": "Support",
+        "hp": 17,
+        "damage": 4,
+        "behavior": "disrupt"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Sand Shredder",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 9,
+        "behavior": "ambush"
+      },
+      {
+        "name": "Desert Snare",
+        "type": "Support",
+        "hp": 25,
+        "damage": 6,
+        "behavior": "trap"
+      }
+    ],
+    "boss": [
+      {
+        "name": "The Mirage Prince",
+        "type": "Boss",
+        "hp": 49,
+        "damage": 12,
+        "behavior": "mislead"
+      }
+    ]
+  },
+  "Industrial": {
+    "regular": [
+      {
+        "name": "Pipefitter Brawler",
+        "type": "Standard",
+        "hp": 23,
+        "damage": 7,
+        "behavior": "brawl"
+      },
+      {
+        "name": "Boiler Engineer",
+        "type": "Support",
+        "hp": 19,
+        "damage": 5,
+        "behavior": "overheat"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Iron Fist Foreman",
+        "type": "Elite",
+        "hp": 31,
+        "damage": 9,
+        "behavior": "control"
+      },
+      {
+        "name": "Cooling Unit Hacker",
+        "type": "Support",
+        "hp": 23,
+        "damage": 6,
+        "behavior": "disable"
+      }
+    ],
+    "boss": [
+      {
+        "name": "The Anvil",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 12,
+        "behavior": "smash"
+      }
+    ]
+  },
+  "Cyber": {
+    "regular": [
+      {
+        "name": "Firewall Caster",
+        "type": "Support",
+        "hp": 18,
+        "damage": 4,
+        "behavior": "jam"
+      },
+      {
+        "name": "Pulse Guard",
+        "type": "Standard",
+        "hp": 21,
+        "damage": 6,
+        "behavior": "shield"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Cybernetic Interceptor",
+        "type": "Elite",
+        "hp": 29,
+        "damage": 9,
+        "behavior": "scramble"
+      },
+      {
+        "name": "Grid Warden",
+        "type": "Support",
+        "hp": 25,
+        "damage": 6,
+        "behavior": "emp"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Nullstream",
+        "type": "Boss",
+        "hp": 50,
+        "damage": 11,
+        "behavior": "drain"
+      }
+    ]
+  },
+  "Wasteland": {
+    "regular": [
+      {
+        "name": "Ashborne Raider",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "rage"
+      },
+      {
+        "name": "Rad Technician",
+        "type": "Support",
+        "hp": 18,
+        "damage": 5,
+        "behavior": "poison"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Plaguebearer",
+        "type": "Elite",
+        "hp": 30,
+        "damage": 9,
+        "behavior": "infect"
+      },
+      {
+        "name": "Mutant Charger",
+        "type": "Elite",
+        "hp": 33,
+        "damage": 11,
+        "behavior": "rush"
+      }
+    ],
+    "boss": [
+      {
+        "name": "The Fallout Lord",
+        "type": "Boss",
+        "hp": 52,
+        "damage": 13,
+        "behavior": "irradiate"
+      }
+    ]
+  },
+  "Entertainment": {
+    "regular": [
+      {
+        "name": "Camera Drone",
+        "type": "Drone",
+        "hp": 13,
+        "damage": 5,
+        "behavior": "surveil"
+      },
+      {
+        "name": "Seat Guard",
+        "type": "Standard",
+        "hp": 21,
+        "damage": 6,
+        "behavior": "patrol"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Pyro Performer",
+        "type": "Elite",
+        "hp": 28,
+        "damage": 9,
+        "behavior": "burn"
+      },
+      {
+        "name": "Stage Hypnotist",
+        "type": "Support",
+        "hp": 24,
+        "damage": 6,
+        "behavior": "disorient"
+      }
+    ],
+    "boss": [
+      {
+        "name": "Maestro Belladonna",
+        "type": "Boss",
+        "hp": 47,
+        "damage": 11,
+        "behavior": "charm"
+      }
+    ]
+  },
+  "Transit": {
+    "regular": [
+      {
+        "name": "Tunnel Enforcer",
+        "type": "Standard",
+        "hp": 22,
+        "damage": 6,
+        "behavior": "patrol"
+      },
+      {
+        "name": "Router Tech",
+        "type": "Support",
+        "hp": 18,
+        "damage": 5,
+        "behavior": "jam"
+      }
+    ],
+    "elite": [
+      {
+        "name": "Cargo Raider",
+        "type": "Elite",
+        "hp": 30,
+        "damage": 8,
+        "behavior": "push"
+      },
+      {
+        "name": "Signal Spoofer",
+        "type": "Support",
+        "hp": 24,
+        "damage": 6,
+        "behavior": "disable"
+      }
+    ],
+    "boss": [
+      {
+        "name": "The Terminal Mind",
+        "type": "Boss",
+        "hp": 49,
+        "damage": 10,
+        "behavior": "redirect"
+      }
+    ]
+  }
+}

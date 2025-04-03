@@ -1,0 +1,337 @@
+{
+  "Urban": {
+    "Commander Varga": [
+        {"name": "Varga’s Suppression Cannon", "type": "Weapon", "effect": "Disables enemy overwatch"},
+        {"name": "Urban Warfare Rig", "type": "Armor", "effect": "Reduces damage in close quarters"},
+        {"name": "Encrypted Command Chip", "type": "Gadget", "effect": "Reveal all enemy locations on first turn"}
+    ],
+    "The Architect": [
+        {"name": "Architect’s Designator", "type": "Weapon", "effect": "Marks targets for bonus team damage"},
+        {"name": "Bulwark Field Vest", "type": "Armor", "effect": "Nullifies first hit each mission"},
+        {"name": "Holographic Planner", "type": "Gadget", "effect": "Prevents ambush events"}
+    ],
+    "Specter Knox": [
+        {"name": "Knox’s Shard Blade", "type": "Weapon", "effect": "Guaranteed critical on flanking attacks"},
+        {"name": "Evasive Cloak", "type": "Armor", "effect": "Increases dodge chance"},
+        {"name": "Blackout Spike", "type": "Gadget", "effect": "Disables enemy gear for 1 turn"}
+    ],
+    "Chief Mauer": [
+        {"name": "Mauer's Riot Cannon", "type": "Weapon", "effect": "Knocks back multiple enemies"},
+        {"name": "Heavy Suppression Frame", "type": "Armor", "effect": "Immune to suppression"},
+        {"name": "Negotiator Badge", "type": "Gadget", "effect": "Increases mission intel yield"}
+    ]
+},
+"Jungle": {
+    "Colonel Rojas": [
+        {"name": "Jungle Carbine", "type": "Weapon", "effect": "Silent shots in dense terrain"},
+        {"name": "Camouflage Wraps", "type": "Armor", "effect": "Harder to detect when idle"},
+        {"name": "Tribal Drum Beacon", "type": "Gadget", "effect": "Summons temporary decoy"}
+    ],
+    "The Warden": [
+        {"name": "Warden’s Thorn Launcher", "type": "Weapon", "effect": "Bleeds enemies over time"},
+        {"name": "Rootwoven Harness", "type": "Armor", "effect": "Reduces trap damage"},
+        {"name": "Jungle Sigil", "type": "Gadget", "effect": "Scout hidden paths"}
+    ],
+    "General Uko": [
+        {"name": "Uko’s Smoke Rifle", "type": "Weapon", "effect": "Obscures enemy sightline on hit"},
+        {"name": "Ghostleaf Armor", "type": "Armor", "effect": "Blends into jungle zones"},
+        {"name": "Hollow Fang Idol", "type": "Gadget", "effect": "Immune to poison"}
+    ],
+    "Silent Beast": [
+        {"name": "Predator’s Claw Gauntlet", "type": "Weapon", "effect": "Stealth melee finisher"},
+        {"name": "Vinebound Plate", "type": "Armor", "effect": "Reduced visibility from drones"},
+        {"name": "Beast Totem", "type": "Gadget", "effect": "Intimidates enemies, lowering morale"}
+    ]
+},
+ "Arctic": {
+        "Overseer Nyrov": [
+            {"name": "Cryo Lance", "type": "Weapon", "effect": "Freezes targets for one turn"},
+            {"name": "Thermal Layering Suit", "type": "Armor", "effect": "Negates cold terrain penalties"},
+            {"name": "Glacier Data Cube", "type": "Gadget", "effect": "Auto-hacks frozen terminals"}
+        ],
+        "The Ice Claw": [
+            {"name": "Frostbite Talons", "type": "Weapon", "effect": "Applies chill effect to enemies"},
+            {"name": "Snowblind Mantle", "type": "Armor", "effect": "Increases stealth in snow"},
+            {"name": "Cryo Sigil", "type": "Gadget", "effect": "Reduces detection by thermal drones"}
+        ],
+        "Commander Reznik": [
+            {"name": "Reznik’s Shock Baton", "type": "Weapon", "effect": "Stuns robotic enemies"},
+            {"name": "Arctic Combat Rig", "type": "Armor", "effect": "Boosts resistance to critical hits"},
+            {"name": "Old War Medallion", "type": "Gadget", "effect": "Grants extra AP on first turn"}
+        ],
+        "Frostbreaker": [
+            {"name": "Thermal Ripper", "type": "Weapon", "effect": "Ignores enemy armor"},
+            {"name": "Subzero Coreplate", "type": "Armor", "effect": "Chance to reflect damage"},
+            {"name": "EMP Ice Spike", "type": "Gadget", "effect": "Short-circuits enemy tech"}
+        ]
+    },
+    "Underground": {
+        "The Signal": [
+            {"name": "Pulse Reverb Gun", "type": "Weapon", "effect": "Deals area EMP damage"},
+            {"name": "Insulated Relay Jacket", "type": "Armor", "effect": "Resists signal disruption"},
+            {"name": "Frequency Jammer", "type": "Gadget", "effect": "Prevents reinforcements"}
+        ],
+        "Warden Kreel": [
+            {"name": "Kreel’s Riot Pike", "type": "Weapon", "effect": "Pushes and stuns enemies"},
+            {"name": "Guard Commander Plating", "type": "Armor", "effect": "Chance to block melee"},
+            {"name": "Keycard Vault Token", "type": "Gadget", "effect": "Unlocks hidden rooms"}
+        ],
+        "Ghost Echo": [
+            {"name": "Echo Blade", "type": "Weapon", "effect": "Ignores armor and leaves trail"},
+            {"name": "Resonance Vest", "type": "Armor", "effect": "Immune to disorient effects"},
+            {"name": "Ghost Module", "type": "Gadget", "effect": "Invisibility for 1 turn"}
+        ],
+        "Subnet": [
+            {"name": "Hijack Spike", "type": "Weapon", "effect": "Takes control of enemy drones"},
+            {"name": "Data-Bonded Armor", "type": "Armor", "effect": "Connects to support AI for boosts"},
+            {"name": "Root Node Uplink", "type": "Gadget", "effect": "Gives vision of entire map"}
+        ]
+    },
+    "Mountain": {
+      "Warlord Hesse": [
+          {"name": "Avalanche Hammer", "type": "Weapon", "effect": "Stuns multiple enemies on descent"},
+          {"name": "Echo Ridge Plating", "type": "Armor", "effect": "Boosts defense when alone"},
+          {"name": "Peak Command Beacon", "type": "Gadget", "effect": "Summons elite ally reinforcements"}
+      ],
+      "Stone Talon": [
+          {"name": "Talonstrike Launcher", "type": "Weapon", "effect": "Ignores cover and elevation penalties"},
+          {"name": "Raptorhide Vest", "type": "Armor", "effect": "Increases mobility on rocky terrain"},
+          {"name": "Wind Sigil", "type": "Gadget", "effect": "Reduces enemy accuracy"}
+      ],
+      "High Sentinel": [
+          {"name": "Overwatch Longrifle", "type": "Weapon", "effect": "Grants instant overwatch zone"},
+          {"name": "Alpine Sentinel Coat", "type": "Armor", "effect": "Grants bonus vision range"},
+          {"name": "Mountain Emblem", "type": "Gadget", "effect": "Boosts accuracy on elevation"}
+      ],
+      "Peak Phantom": [
+          {"name": "Phantom Talon Knives", "type": "Weapon", "effect": "Deals double damage from stealth"},
+          {"name": "Ghostwind Cloak", "type": "Armor", "effect": "Makes user harder to hit"},
+          {"name": "Smoke Pendant", "type": "Gadget", "effect": "Creates cover instantly"}
+      ]
+  },
+  "Coastal": {
+      "Admiral Tyvek": [
+          {"name": "Tyvek’s Naval Railgun", "type": "Weapon", "effect": "Pierces all enemies in a line"},
+          {"name": "Fleet Admiral Coat", "type": "Armor", "effect": "Grants resistance to explosives"},
+          {"name": "Oceanic Command Chip", "type": "Gadget", "effect": "Gives initiative to entire team"}
+      ],
+      "Breaker Vance": [
+          {"name": "Stormpiercer Harpoon", "type": "Weapon", "effect": "Pulls enemies and stuns them"},
+          {"name": "Tidebreaker Armor", "type": "Armor", "effect": "Reduces movement penalty on wet terrain"},
+          {"name": "Salt Beacon", "type": "Gadget", "effect": "Lures enemies into traps"}
+      ],
+      "Captain Mira": [
+          {"name": "Mira’s Multi-Shot Pistol", "type": "Weapon", "effect": "Hits multiple enemies at once"},
+          {"name": "Corsair’s Flexweave", "type": "Armor", "effect": "Boosts critical evasion"},
+          {"name": "Smuggler’s Map", "type": "Gadget", "effect": "Reveals supply drops"}
+      ],
+      "Riptide": [
+          {"name": "Tidebreaker Mace", "type": "Weapon", "effect": "Shoves enemies into hazards"},
+          {"name": "Floodguard Plates", "type": "Armor", "effect": "Negates water hazard effects"},
+          {"name": "Abyssal Charm", "type": "Gadget", "effect": "Summons an aquatic drone ally"}
+      ]
+  },
+  "Desert": {
+        "The Jackal King": [
+            {"name": "Sunfang Rifle", "type": "Weapon", "effect": "Applies burning over time"},
+            {"name": "Dune Sovereign Mail", "type": "Armor", "effect": "Negates sandstorm penalties"},
+            {"name": "Scorched Talisman", "type": "Gadget", "effect": "Prevents ambush"}
+        ],
+        "Windshear": [
+            {"name": "Duststorm Carbine", "type": "Weapon", "effect": "Reduces enemy accuracy"},
+            {"name": "Tempest Mantle", "type": "Armor", "effect": "Immune to pushback"},
+            {"name": "Zephyr Drone", "type": "Gadget", "effect": "Creates wind shield around user"}
+        ],
+        "Mirage": [
+            {"name": "Illusion Pistol", "type": "Weapon", "effect": "Confuses enemies for 1 turn"},
+            {"name": "Reflection Weave", "type": "Armor", "effect": "Chance to evade any attack"},
+            {"name": "Mirage Orb", "type": "Gadget", "effect": "Creates false clones"}
+        ],
+        "Scarab": [
+            {"name": "Scarab Blade", "type": "Weapon", "effect": "Deals poison damage on hit"},
+            {"name": "Carapace Armor", "type": "Armor", "effect": "Absorbs small arms fire"},
+            {"name": "Desert Scarab Idol", "type": "Gadget", "effect": "Summons protective beetle swarm"}
+        ]
+    },
+    "Industrial": {
+        "Foreman Krieg": [
+            {"name": "Forgehammer Shotgun", "type": "Weapon", "effect": "Deals bonus damage to stunned targets"},
+            {"name": "Blacksteel Apron", "type": "Armor", "effect": "Reduces explosive damage"},
+            {"name": "Industrial Override Chip", "type": "Gadget", "effect": "Controls one enemy drone"}
+        ],
+        "The Steel Ghost": [
+            {"name": "Silencer Rotary Cannon", "type": "Weapon", "effect": "High RPM with stealth module"},
+            {"name": "Steel Phantom Armor", "type": "Armor", "effect": "Invisible for 1 turn after kill"},
+            {"name": "Ghost Beacon", "type": "Gadget", "effect": "Auto-hack all terminals in range"}
+        ],
+        "Blastmaster Rho": [
+            {"name": "Blastwave Mortar", "type": "Weapon", "effect": "AOE knockback"},
+            {"name": "Shockplate Harness", "type": "Armor", "effect": "Returns damage to attackers"},
+            {"name": "Volatile Core", "type": "Gadget", "effect": "Explodes on defeat for final hit"}
+        ],
+        "Torchline Chief": [
+            {"name": "Torchline Flamer", "type": "Weapon", "effect": "Spreads fire across terrain"},
+            {"name": "Fireproof Mantle", "type": "Armor", "effect": "Nullifies burn effects"},
+            {"name": "Smelter’s Seal", "type": "Gadget", "effect": "Heals gear-based operators"}
+        ]
+    },
+  "Cyber": {
+        "MotherNode": [
+            {"name": "Neurostatic Cannon", "type": "Weapon", "effect": "Overloads enemy circuits on hit"},
+            {"name": "Dataweave Skin", "type": "Armor", "effect": "Immune to hacking"},
+            {"name": "Neural Core Spike", "type": "Gadget", "effect": "Speeds up all allied cooldowns"}
+        ],
+        "Echo-Zero": [
+            {"name": "Sonic Shard Rifle", "type": "Weapon", "effect": "Deals damage through cover"},
+            {"name": "Silicone Phasecloak", "type": "Armor", "effect": "Brief invisibility after damage"},
+            {"name": "Echo Pulse Array", "type": "Gadget", "effect": "Pings enemy movements every turn"}
+        ],
+        "Subnet": [
+            {"name": "Control Override Wand", "type": "Weapon", "effect": "Permanently hijack one device"},
+            {"name": "Firewall Armor", "type": "Armor", "effect": "Reflects first EMP attack"},
+            {"name": "Data Latch Spike", "type": "Gadget", "effect": "Harvests intel from terminals instantly"}
+        ],
+        "Nullstream": [
+            {"name": "Static Field Blade", "type": "Weapon", "effect": "Nullifies enemy buffs on hit"},
+            {"name": "Ionwrap Casing", "type": "Armor", "effect": "Absorbs electric attacks"},
+            {"name": "Signal Void Disk", "type": "Gadget", "effect": "Blocks communication in a small radius"}
+        ]
+    },
+    "Wasteland": {
+        "Burned King": [
+            {"name": "Charfire Axe", "type": "Weapon", "effect": "Leaves a burning trail"},
+            {"name": "Ashbone Harness", "type": "Armor", "effect": "Heals when standing in fire"},
+            {"name": "King’s Totem", "type": "Gadget", "effect": "Raises morale of all allies"}
+        ],
+        "Rustclaw": [
+            {"name": "Sawtooth Launcher", "type": "Weapon", "effect": "Bleeds and disarms"},
+            {"name": "Scrapplate Armor", "type": "Armor", "effect": "Chance to deflect bullets"},
+            {"name": "Mag Salvager", "type": "Gadget", "effect": "Repairs all deployed drones"}
+        ],
+        "Gravecaller": [
+            {"name": "Tox Wailer", "type": "Weapon", "effect": "Poisons multiple enemies in arc"},
+            {"name": "Wailing Wraps", "type": "Armor", "effect": "Deals damage to attackers"},
+            {"name": "Plague Bell", "type": "Gadget", "effect": "Spreads confusion to nearby foes"}
+        ],
+        "The Fallout Lord": [
+            {"name": "Radstorm Caster", "type": "Weapon", "effect": "Deals radiation damage over time"},
+            {"name": "Irradiated Coreplate", "type": "Armor", "effect": "Immune to all toxins"},
+            {"name": "Nuclear Protocol Key", "type": "Gadget", "effect": "Triggers devastating AOE on death"}
+        ]
+    },
+  "Entertainment": {
+        "King Vanta": [
+            {"name": "Stage King's Baton", "type": "Weapon", "effect": "Disorients enemies in line of sight"},
+            {"name": "Spotlight Shroud", "type": "Armor", "effect": "Increases evasion while visible"},
+            {"name": "Encore Mask", "type": "Gadget", "effect": "Performs a repeat turn after kill"}
+        ],
+        "Echo Diva": [
+            {"name": "Sonic Refractor", "type": "Weapon", "effect": "Bounces between targets"},
+            {"name": "Vocal Shield", "type": "Armor", "effect": "Negates sound-based attacks"},
+            {"name": "Autotune Implant", "type": "Gadget", "effect": "Heals allies in range"}
+        ],
+        "Masked Performers": [
+            {"name": "Prop Gun Trickshot", "type": "Weapon", "effect": "Deals surprise critical on first hit"},
+            {"name": "Curtainfall Cloak", "type": "Armor", "effect": "Grants one-time invisibility"},
+            {"name": "Backstage Pass", "type": "Gadget", "effect": "Bypasses all security scans"}
+        ],
+        "Maestro Belladonna": [
+            {"name": "Conducting Cane", "type": "Weapon", "effect": "Charms enemy into skipping a turn"},
+            {"name": "Satin Guard Suit", "type": "Armor", "effect": "Reflects status effects"},
+            {"name": "Tempo Crystal", "type": "Gadget", "effect": "Slows all enemy actions"}
+        ]
+    },
+    "Transit": {
+        "Stationmaster Krail": [
+            {"name": "Railgun Revolver", "type": "Weapon", "effect": "Ignores cover and stuns"},
+            {"name": "Checkpoint Barrier Vest", "type": "Armor", "effect": "Boosts defense when stationary"},
+            {"name": "Security Override Key", "type": "Gadget", "effect": "Unlocks all barriers"}
+        ],
+        "Smuggler Queen Zara": [
+            {"name": "Contraband SMG", "type": "Weapon", "effect": "Has chance to steal enemy gear"},
+            {"name": "Velvet Hauler Jacket", "type": "Armor", "effect": "Carries double loot"},
+            {"name": "Stealth Manifest", "type": "Gadget", "effect": "Hides squad movement for 2 turns"}
+        ],
+        "The Conductor": [
+            {"name": "Conductor’s Baton Blade", "type": "Weapon", "effect": "Buffs nearby allies on use"},
+            {"name": "Railflow Regulator", "type": "Armor", "effect": "Auto-moves with trains"},
+            {"name": "Conductor’s Watch", "type": "Gadget", "effect": "Rewinds time by one round"}
+        ],
+        "The Terminal Mind": [
+            {"name": "Neurolash Baton", "type": "Weapon", "effect": "Causes enemy confusion"},
+            {"name": "Streamline Panel Armor", "type": "Armor", "effect": "Boosts speed on monorail paths"},
+            {"name": "Routing Protocol Chip", "type": "Gadget", "effect": "Allows immediate team reposition"}
+        ]
+    },
+ 
+  "Crimson Dao Triad": {
+         "Obsidian Dragon": [
+             {"name": "Dragonfire Chakram", "type": "Weapon", "effect": "Ricochets between targets with burn effect"},
+             {"name": "Serpentsteel Carapace", "type": "Armor", "effect": "Immune to bleed and poison"},
+             {"name": "Encrypted Jade Relic", "type": "Gadget", "effect": "Prevents one ally from dying once per mission"}
+         ]
+     },
+     "Zvezda Spetsgruppa": {
+         "Commander Krylov": [
+             {"name": "Polar Execution Rifle", "type": "Weapon", "effect": "Critical hit chance increases in cold zones"},
+             {"name": "Tundra Bulwark Armor", "type": "Armor", "effect": "Absorbs damage from snipers"},
+             {"name": "Cryo Command Protocol", "type": "Gadget", "effect": "Freezes all traps and hazards"}
+         ]
+     },
+     "Les Loups Gris": {
+         "The Director": [
+             {"name": "Maelstrom Pistol", "type": "Weapon", "effect": "Fires in a flare cone, disorients enemies"},
+             {"name": "Phantom Cloak", "type": "Armor", "effect": "Invisible if stationary for 1 turn"},
+             {"name": "Rehearsal Reel", "type": "Gadget", "effect": "Resets one turn if triggered"}
+         ]
+     },
+     "Black Nile Pact": {
+         "Jackal King": [
+             {"name": "Scarab Spear", "type": "Weapon", "effect": "Applies stacking toxin"},
+             {"name": "Pharaoh’s Wrath Plate", "type": "Armor", "effect": "Reflects status effects"},
+             {"name": "Sunshard Amulet", "type": "Gadget", "effect": "Activates solar pulse to blind enemies"}
+         ]
+     },
+     "Kongō-Kai": {
+         "Circuit Shogun": [
+             {"name": "Katana of Code", "type": "Weapon", "effect": "Ignores shields and disrupts AI"},
+             {"name": "Encrypted Silk Armor", "type": "Armor", "effect": "Immune to EMP effects"},
+             {"name": "Neo-Scroll of Silence", "type": "Gadget", "effect": "Prevents enemy reinforcements"}
+         ]
+     },
+     "Jaguar Azul": {
+         "Xibalba Warlord": [
+             {"name": "Smoke Panther Claws", "type": "Weapon", "effect": "Bleeds and confuses on hit"},
+             {"name": "Junglebone Armor", "type": "Armor", "effect": "Immunity to jungle hazards"},
+             {"name": "Mayan Skull Totem", "type": "Gadget", "effect": "Fear aura lowers enemy accuracy"}
+         ]
+     },
+     "Stahl Krieger": {
+         "Colonel Eisenhart": [
+             {"name": "Iron Legion Blaster", "type": "Weapon", "effect": "Burst fire with armor penetration"},
+             {"name": "Warsteel Plating", "type": "Armor", "effect": "Bonus health against explosives"},
+             {"name": "Marching Order Disk", "type": "Gadget", "effect": "Grants squad +1 action first turn"}
+         ]
+     },
+     "Red Veldt Legion": {
+         "General Tau": [
+             {"name": "Blightfang Rifle", "type": "Weapon", "effect": "Poison stacks spread to nearby enemies"},
+             {"name": "Riotbone Harness", "type": "Armor", "effect": "Absorbs melee attacks"},
+             {"name": "Scrapfire Sigil", "type": "Gadget", "effect": "Creates burning terrain zone"}
+         ]
+     },
+     "Shadow Lotus Front": {
+         "Rainforest Ghost": [
+             {"name": "Silent Bloom Blade", "type": "Weapon", "effect": "Silently eliminates unaware targets"},
+             {"name": "Mistleaf Armor", "type": "Armor", "effect": "Stealth duration extended"},
+             {"name": "Lotus Incense Beacon", "type": "Gadget", "effect": "Blinds enemies in fog zones"}
+         ]
+     },
+     "Arktikos Valkyries": {
+         "Frost Valkyrie": [
+             {"name": "Aurora Halberd", "type": "Weapon", "effect": "Deals cryo and shock damage"},
+             {"name": "Glacier Mail", "type": "Armor", "effect": "Chance to freeze attackers"},
+             {"name": "Northern Sky Relic", "type": "Gadget", "effect": "Boosts ally morale in cold zones"}
+         ]
+     }
+}

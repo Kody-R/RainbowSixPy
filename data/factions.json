@@ -1,0 +1,392 @@
+{
+  "Iron Banner Syndicate": {
+    "type": "Terrain-Tied",
+    "primary_terrain": "Industrial",
+    "style": "Paramilitary black-market cartel rooted in weapon manufacturing and labor unrest",
+    "presence": [
+      "Industrial",
+      "Urban",
+      "Wasteland"
+    ],
+    "tactics": [
+      "Heavy armor",
+      "Suppression",
+      "Riot drones"
+    ],
+    "notable_units": [
+      "Smelter Guards",
+      "Steel Ghost",
+      "Hazmat Troopers"
+    ]
+  },
+  "NeuroHex Collective": {
+    "type": "Terrain-Tied",
+    "primary_terrain": "Cyber",
+    "style": "AI-aligned techno-cult bent on digital transcendence",
+    "presence": [
+      "Cyber",
+      "Underground",
+      "Arctic"
+    ],
+    "tactics": [
+      "Jamming",
+      "Drones",
+      "Mind-control tech"
+    ],
+    "notable_units": [
+      "Pulsecaster",
+      "Black ICE Commander",
+      "MotherNode"
+    ]
+  },
+  "Red Dust Confederacy": {
+    "type": "Terrain-Tied",
+    "primary_terrain": "Wasteland",
+    "style": "Raider alliance turned militant state with tribal warlords",
+    "presence": [
+      "Wasteland",
+      "Mountain",
+      "Desert"
+    ],
+    "tactics": [
+      "Swarm attacks",
+      "Ambushes",
+      "Poison"
+    ],
+    "notable_units": [
+      "Burned King",
+      "Rustclaw Marauders",
+      "Gravecaller"
+    ]
+  },
+  "Velvet Accord": {
+    "type": "Terrain-Tied",
+    "primary_terrain": "Entertainment",
+    "style": "Glamorous espionage ring posing as VIPs, celebrities, and media moguls",
+    "presence": [
+      "Entertainment",
+      "Urban",
+      "Transit"
+    ],
+    "tactics": [
+      "Psychological manipulation",
+      "Disguises",
+      "Flash tactics"
+    ],
+    "notable_units": [
+      "King Vanta",
+      "Echo Diva",
+      "Masked Performers"
+    ]
+  },
+  "Iron Veil Authority": {
+    "type": "Terrain-Tied",
+    "primary_terrain": "Transit",
+    "style": "Corrupt ex-UN paramilitary force controlling global transit corridors",
+    "presence": [
+      "Transit",
+      "Coastal",
+      "Urban"
+    ],
+    "tactics": [
+      "Control",
+      "Lockdowns",
+      "Rapid deployment"
+    ],
+    "notable_units": [
+      "Stationmaster Krail",
+      "Customs Interceptors",
+      "Smuggler Queen Zara"
+    ]
+  },
+  "Ordo Vanta": {
+    "type": "Global",
+    "style": "Ancient shadow cabal manipulating global conflict for centuries",
+    "belief": "Order through engineered chaos",
+    "tactics": [
+      "Elite agents",
+      "Ancient tech",
+      "Blacksite intel"
+    ],
+    "terrains": "All",
+    "bosses": [
+      "The Architect",
+      "The Conductor",
+      "Silent Beast"
+    ]
+  },
+  "SYN-Eclipse": {
+    "type": "Global",
+    "style": "Breakaway AI-led faction repurposing human and machine assets",
+    "goal": "Purge biological imperfection",
+    "tactics": [
+      "Neural hijack",
+      "Drone command",
+      "Autonomous suppression"
+    ],
+    "terrains": [
+      "Cyber",
+      "Arctic",
+      "Industrial",
+      "Underground",
+      "Urban"
+    ],
+    "bosses": [
+      "Echo-Zero",
+      "MotherNode",
+      "Subnet"
+    ]
+  },
+  "The Pale Hand": {
+    "type": "Global",
+    "style": "Cult of silence, assassins, and biochemical fanatics",
+    "goal": "World balance through erasure",
+    "tactics": [
+      "Stealth",
+      "Toxins",
+      "Psychological disruption"
+    ],
+    "terrains": [
+      "Jungle",
+      "Urban",
+      "Wasteland",
+      "Underground"
+    ],
+    "bosses": [
+      "Specter Knox",
+      "Silent Beast",
+      "Ghost Echo"
+    ]
+  },
+  "Black Reef Conglomerate": {
+    "type": "Global",
+    "style": "Corporate megafaction funding global war, espionage, and black market trade",
+    "fronts": [
+      "Security",
+      "Pharmaceuticals",
+      "Logistics"
+    ],
+    "tactics": [
+      "Well-equipped mercenaries",
+      "Bribes",
+      "Corporate drone systems"
+    ],
+    "terrains": "All",
+    "bosses": [
+      "Commander Varga",
+      "Admiral Tyvek",
+      "Director Cassian"
+    ]
+  },
+  "Nova Hydra Directive": {
+    "type": "Global",
+    "style": "Rogue Cold War military command operating from old blacksites",
+    "assets": [
+      "Ex-generals",
+      "Nukes",
+      "Military AI systems"
+    ],
+    "tactics": [
+      "Coordination",
+      "Brute force",
+      "Suppression",
+      "Scorched-earth policies"
+    ],
+    "terrains": "All",
+    "bosses": [
+      "General Husk",
+      "Commander Reznik",
+      "Warlord Hesse"
+    ]
+  },
+  "Crimson Dao Triad": {
+    "country": "China",
+    "style": "Sino-nationalist shadow triad merging old traditions with next-gen cybercrime",
+    "presence": [
+      "Urban",
+      "Cyber",
+      "Industrial"
+    ],
+    "tactics": [
+      "Surveillance hacks",
+      "Poison trade",
+      "Flash raids"
+    ],
+    "notable_units": [
+      "Ghostblade Operative",
+      "Digital Monk",
+      "Scarlet Dagger"
+    ]
+  },
+  "Zvezda Spetsgruppa": {
+    "country": "Russia",
+    "style": "Elite rogue Spetsnaz cell guarding Cold War secrets",
+    "presence": [
+      "Arctic",
+      "Underground",
+      "Mountain"
+    ],
+    "tactics": [
+      "Precision strikes",
+      "High endurance patrols",
+      "Sabotage"
+    ],
+    "notable_units": [
+      "Ice Claw",
+      "Subzero Stalker",
+      "Kremlin Ghost"
+    ]
+  },
+  "Les Loups Gris": {
+    "country": "France",
+    "style": "Post-national paramilitary artists and tacticians with a flair for drama",
+    "presence": [
+      "Entertainment",
+      "Urban",
+      "Transit"
+    ],
+    "tactics": [
+      "Disguises",
+      "Flashbang deception",
+      "Theatrics"
+    ],
+    "notable_units": [
+      "Mirage Unit",
+      "Director Phantom",
+      "Renaissance Sniper"
+    ]
+  },
+  "Black Nile Pact": {
+    "country": "Egypt",
+    "style": "Neo-pharaoh cult leveraging ancient mysticism and modern weapons",
+    "presence": [
+      "Desert",
+      "Urban",
+      "Wasteland"
+    ],
+    "tactics": [
+      "Sand-based ambushes",
+      "Radiation poison",
+      "Insurgency"
+    ],
+    "notable_units": [
+      "Jackal King",
+      "Scarab Gunner",
+      "Desert Prophet"
+    ]
+  },
+  "Kong\u014d-Kai": {
+    "country": "Japan",
+    "style": "Techno-yakuza syndicate with cybernetic discipline and spiritual ritual",
+    "presence": [
+      "Cyber",
+      "Underground",
+      "Transit"
+    ],
+    "tactics": [
+      "Silent infiltration",
+      "Nanoblade strikes",
+      "Net disruption"
+    ],
+    "notable_units": [
+      "Chrome Ronin",
+      "Circuit Priest",
+      "Zero-Blade"
+    ]
+  },
+  "Jaguar Azul": {
+    "country": "Mexico",
+    "style": "Narco-militia with Mayan iconography and chemical warfare roots",
+    "presence": [
+      "Jungle",
+      "Urban",
+      "Wasteland"
+    ],
+    "tactics": [
+      "Poisoned traps",
+      "Drugged shock troops",
+      "Smuggler networks"
+    ],
+    "notable_units": [
+      "Xibalba Warlord",
+      "Jungle Phantom",
+      "Smoke Panther"
+    ]
+  },
+  "Stahl Krieger": {
+    "country": "Germany",
+    "style": "Pan-European ultranationalists using retrofitted WW2 tech and modern drones",
+    "presence": [
+      "Industrial",
+      "Urban",
+      "Mountain"
+    ],
+    "tactics": [
+      "Shock charges",
+      "Steel drones",
+      "Tunnel breaching"
+    ],
+    "notable_units": [
+      "Panzergeist",
+      "Sentry Engineer",
+      "Iron Wolf"
+    ]
+  },
+  "Red Veldt Legion": {
+    "country": "South Africa",
+    "style": "Resource warlords in post-collapse mining zones",
+    "presence": [
+      "Wasteland",
+      "Desert",
+      "Industrial"
+    ],
+    "tactics": [
+      "Vehicle raids",
+      "Explosive drills",
+      "Supply hijacks"
+    ],
+    "notable_units": [
+      "Crater Marauder",
+      "Drill Sergeant",
+      "Dust Seeker"
+    ]
+  },
+  "Shadow Lotus Front": {
+    "country": "Vietnam",
+    "style": "Eco-revolutionaries with ties to black ops units and deep jungle resistance",
+    "presence": [
+      "Jungle",
+      "Urban",
+      "Coastal"
+    ],
+    "tactics": [
+      "Silent kills",
+      "Camouflage sniping",
+      "Jungle hacking"
+    ],
+    "notable_units": [
+      "Lotus Sniper",
+      "Green Viper",
+      "Rainforest Ghost"
+    ]
+  },
+  "Arktikos Valkyries": {
+    "country": "Norway",
+    "style": "All-female cold-climate raider clan trained in survivalist warfare",
+    "presence": [
+      "Arctic",
+      "Mountain",
+      "Coastal"
+    ],
+    "tactics": [
+      "Cryo traps",
+      "Silent gliders",
+      "Harpoon ambush"
+    ],
+    "notable_units": [
+      "Frost Valkyrie",
+      "Glacier Warden",
+      "Icehuntress"
+    ]
+  }
+}
