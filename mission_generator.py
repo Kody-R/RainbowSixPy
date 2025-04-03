@@ -32,7 +32,11 @@ ENVIRONMENTS = {
     "Coastal": {},
     "Desert": {"tech_penalty": 1, "marksmanship_bonus": 1},
     "Transit": {"tech_bonus": 1,"stamina_penalty": 1,"stealth_penalty": 1},
-    "Entertainment": {"stealth_bonus": 1,"marksmanship_penalty": 1,"leadership_bonus": 1}
+    "Entertainment": {"stealth_bonus": 1,"marksmanship_penalty": 1,"leadership_bonus": 1},
+    "Industrial": {"tech_bonus": 1, "marksmanship_penalty": 1},
+    "Cyber": {"tech_bonus": 2, "stealth_penalty": 1},
+    "Wasteland": {"stealth_bonus": 1, "tech_penalty": 1}
+
 }
 
 OBJECTIVE_CHAINS = [
@@ -65,8 +69,13 @@ MISSION_TYPES = {
     "Hack": "💻 Cyber",
     "Neutralize": "🔫 Assault",
     "Rescue": "🚑 Rescue",
-    "Destroy": "🔥 Demolition"
+    "Destroy": "🔥 Demolition",
+    "Stealth": "🕶️ Stealth",
+    "Exfil": "🛫 Exfiltration",
+    "Defense": "🛡️ Defense",
+    "Recon": "🔍 Recon"
 }
+
 
 MISSION_SAVE_PATH = os.path.join("data", "missions.json")
 
@@ -99,17 +108,17 @@ def save_mission_to_json(mission):
 
 def infer_mission_type(objective_chain):
     first = objective_chain[0].lower()
-    if "extract" in first:
+    if "extract" in first or "locate" in first:
         return "Extraction"
-    if "sabotage" in first:
+    if "sabotage" in first or "interrogate" in first:
         return "Sabotage"
-    if "hack" in first:
+    if "hack" in first or "jam" in first:
         return "Cyber"
     if "neutralize" in first or "kill" in first:
         return "Assault"
-    if "rescue" in first:
+    if "rescue" in first or "find" in first:
         return "Rescue"
-    if "destroy" in first:
+    if "destroy" in first or "disable" in first:
         return "Demolition"
     return "Unknown"
 

@@ -740,5 +740,540 @@
                 "behavior": "ambush"
             }
         ]
-    }
+    },
+    "Industrial": {
+    "regular": [
+        {
+            "name": "Smelter Guard",
+            "type": "Standard",
+            "hp": 21,
+            "damage": 6,
+            "behavior": "patrol"
+        },
+        {
+            "name": "Refinery Sniper",
+            "type": "Sniper",
+            "hp": 16,
+            "damage": 9,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Security Bot",
+            "type": "Drone",
+            "hp": 14,
+            "damage": 6,
+            "behavior": "surveil"
+        },
+        {
+            "name": "Welding Crew Bruiser",
+            "type": "Standard",
+            "hp": 25,
+            "damage": 7,
+            "behavior": "hold_position"
+        },
+        {
+            "name": "Powerline Technician",
+            "type": "Support",
+            "hp": 17,
+            "damage": 5,
+            "behavior": "boost"
+        }
+    ],
+    "elite": [
+        {
+            "name": "Ironworks Enforcer",
+            "type": "Elite",
+            "hp": 30,
+            "damage": 8,
+            "behavior": "suppress"
+        },
+        {
+            "name": "Assembly Line Sniper",
+            "type": "Sniper",
+            "hp": 24,
+            "damage": 10,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Crane Arm Specialist",
+            "type": "Elite",
+            "hp": 28,
+            "damage": 7,
+            "behavior": "push"
+        },
+        {
+            "name": "Maintenance Hacker",
+            "type": "Support",
+            "hp": 22,
+            "damage": 5,
+            "behavior": "jam"
+        },
+        {
+            "name": "Hazmat Trooper",
+            "type": "Elite",
+            "hp": 32,
+            "damage": 6,
+            "behavior": "burn"
+        }
+    ],
+    "boss": [
+        {
+            "name": "Foreman Krieg",
+            "type": "Boss",
+            "hp": 45,
+            "damage": 9,
+            "behavior": "coordinate"
+        },
+        {
+            "name": "The Steel Ghost",
+            "type": "Boss",
+            "hp": 48,
+            "damage": 10,
+            "behavior": "jam"
+        },
+        {
+            "name": "Blastmaster Rho",
+            "type": "Boss",
+            "hp": 46,
+            "damage": 11,
+            "behavior": "explode"
+        },
+        {
+            "name": "Torchline Chief",
+            "type": "Boss",
+            "hp": 44,
+            "damage": 8,
+            "behavior": "burn"
+        }
+    ]
+},
+
+"Cyber": {
+    "regular": [
+        {
+            "name": "Data Warden",
+            "type": "Standard",
+            "hp": 18,
+            "damage": 6,
+            "behavior": "patrol"
+        },
+        {
+            "name": "Augmented Marksman",
+            "type": "Sniper",
+            "hp": 16,
+            "damage": 9,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Spy Drone",
+            "type": "Drone",
+            "hp": 12,
+            "damage": 7,
+            "behavior": "surveil"
+        },
+        {
+            "name": "Circuit Breaker Operative",
+            "type": "Support",
+            "hp": 17,
+            "damage": 4,
+            "behavior": "jam"
+        },
+        {
+            "name": "NeuroLink Guard",
+            "type": "Standard",
+            "hp": 20,
+            "damage": 5,
+            "behavior": "boost"
+        }
+    ],
+    "elite": [
+        {
+            "name": "Signal Hijacker",
+            "type": "Elite",
+            "hp": 28,
+            "damage": 8,
+            "behavior": "disrupt"
+        },
+        {
+            "name": "Firewall Sniper",
+            "type": "Sniper",
+            "hp": 22,
+            "damage": 11,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Cyber Ninja",
+            "type": "Elite",
+            "hp": 26,
+            "damage": 9,
+            "behavior": "flank"
+        },
+        {
+            "name": "Pulsecaster",
+            "type": "Support",
+            "hp": 24,
+            "damage": 6,
+            "behavior": "emp"
+        },
+        {
+            "name": "Sentry Core Unit",
+            "type": "Drone",
+            "hp": 20,
+            "damage": 8,
+            "behavior": "guard"
+        }
+    ],
+    "boss": [
+        {
+            "name": "MotherNode",
+            "type": "Boss",
+            "hp": 46,
+            "damage": 10,
+            "behavior": "jam"
+        },
+        {
+            "name": "The Cryptarch",
+            "type": "Boss",
+            "hp": 48,
+            "damage": 9,
+            "behavior": "infiltrate"
+        },
+        {
+            "name": "Black ICE Commander",
+            "type": "Boss",
+            "hp": 44,
+            "damage": 11,
+            "behavior": "shutdown"
+        },
+        {
+            "name": "Echo-Zero",
+            "type": "Boss",
+            "hp": 50,
+            "damage": 8,
+            "behavior": "drain"
+        }
+    ]
+},
+
+"Wasteland": {
+    "regular": [
+        {
+            "name": "Crater Raider",
+            "type": "Standard",
+            "hp": 22,
+            "damage": 6,
+            "behavior": "patrol"
+        },
+        {
+            "name": "Dustborn Sharpshooter",
+            "type": "Sniper",
+            "hp": 17,
+            "damage": 9,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Scavenger Drone",
+            "type": "Drone",
+            "hp": 14,
+            "damage": 7,
+            "behavior": "surveil"
+        },
+        {
+            "name": "Rad-Tech Medic",
+            "type": "Support",
+            "hp": 18,
+            "damage": 4,
+            "behavior": "heal"
+        },
+        {
+            "name": "Ashwalker Gunner",
+            "type": "Standard",
+            "hp": 24,
+            "damage": 7,
+            "behavior": "hold_position"
+        }
+    ],
+    "elite": [
+        {
+            "name": "Rustclaw Marauder",
+            "type": "Elite",
+            "hp": 30,
+            "damage": 9,
+            "behavior": "ambush"
+        },
+        {
+            "name": "Exiled Sniper",
+            "type": "Sniper",
+            "hp": 23,
+            "damage": 11,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Warlord's Hand",
+            "type": "Elite",
+            "hp": 28,
+            "damage": 8,
+            "behavior": "push"
+        },
+        {
+            "name": "Tox Handler",
+            "type": "Support",
+            "hp": 25,
+            "damage": 6,
+            "behavior": "poison"
+        },
+        {
+            "name": "Tunnel Beast",
+            "type": "Elite",
+            "hp": 32,
+            "damage": 10,
+            "behavior": "charge"
+        }
+    ],
+    "boss": [
+        {
+            "name": "The Burned King",
+            "type": "Boss",
+            "hp": 48,
+            "damage": 11,
+            "behavior": "rage"
+        },
+        {
+            "name": "Gravecaller",
+            "type": "Boss",
+            "hp": 45,
+            "damage": 9,
+            "behavior": "summon"
+        },
+        {
+            "name": "Rad Saint",
+            "type": "Boss",
+            "hp": 47,
+            "damage": 10,
+            "behavior": "heal"
+        },
+        {
+            "name": "General Husk",
+            "type": "Boss",
+            "hp": 50,
+            "damage": 12,
+            "behavior": "break"
+        }
+    ]
+},
+
+"Entertainment": {
+    "regular": [
+        {
+            "name": "Event Security Guard",
+            "type": "Standard",
+            "hp": 20,
+            "damage": 6,
+            "behavior": "patrol"
+        },
+        {
+            "name": "Theater Sniper",
+            "type": "Sniper",
+            "hp": 16,
+            "damage": 9,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Promo Drone",
+            "type": "Drone",
+            "hp": 13,
+            "damage": 6,
+            "behavior": "surveil"
+        },
+        {
+            "name": "Stage Technician",
+            "type": "Support",
+            "hp": 18,
+            "damage": 4,
+            "behavior": "jam"
+        },
+        {
+            "name": "Crowd Controller",
+            "type": "Standard",
+            "hp": 22,
+            "damage": 7,
+            "behavior": "hold_position"
+        }
+    ],
+    "elite": [
+        {
+            "name": "Casino Enforcer",
+            "type": "Elite",
+            "hp": 30,
+            "damage": 8,
+            "behavior": "suppress"
+        },
+        {
+            "name": "Luxury Sniper",
+            "type": "Sniper",
+            "hp": 22,
+            "damage": 11,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Backstage Assassin",
+            "type": "Elite",
+            "hp": 27,
+            "damage": 9,
+            "behavior": "flank"
+        },
+        {
+            "name": "Soundwave Operator",
+            "type": "Support",
+            "hp": 23,
+            "damage": 6,
+            "behavior": "disorient"
+        },
+        {
+            "name": "Masked Performer",
+            "type": "Elite",
+            "hp": 28,
+            "damage": 8,
+            "behavior": "ambush"
+        }
+    ],
+    "boss": [
+        {
+            "name": "Director Cassian",
+            "type": "Boss",
+            "hp": 46,
+            "damage": 9,
+            "behavior": "coordinate"
+        },
+        {
+            "name": "The Ringmaster",
+            "type": "Boss",
+            "hp": 47,
+            "damage": 10,
+            "behavior": "control"
+        },
+        {
+            "name": "King Vanta",
+            "type": "Boss",
+            "hp": 45,
+            "damage": 11,
+            "behavior": "showman"
+        },
+        {
+            "name": "Echo Diva",
+            "type": "Boss",
+            "hp": 44,
+            "damage": 9,
+            "behavior": "disrupt"
+        }
+    ]
+},
+
+"Transit": {
+    "regular": [
+        {
+            "name": "Terminal Guard",
+            "type": "Standard",
+            "hp": 21,
+            "damage": 6,
+            "behavior": "patrol"
+        },
+        {
+            "name": "Checkpoint Sniper",
+            "type": "Sniper",
+            "hp": 17,
+            "damage": 9,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Baggage Drone",
+            "type": "Drone",
+            "hp": 13,
+            "damage": 6,
+            "behavior": "surveil"
+        },
+        {
+            "name": "Railway Technician",
+            "type": "Support",
+            "hp": 18,
+            "damage": 4,
+            "behavior": "boost"
+        },
+        {
+            "name": "Platform Enforcer",
+            "type": "Standard",
+            "hp": 23,
+            "damage": 7,
+            "behavior": "hold_position"
+        }
+    ],
+    "elite": [
+        {
+            "name": "Rapid Response Unit",
+            "type": "Elite",
+            "hp": 30,
+            "damage": 8,
+            "behavior": "suppress"
+        },
+        {
+            "name": "Skybridge Sniper",
+            "type": "Sniper",
+            "hp": 23,
+            "damage": 11,
+            "behavior": "long_range"
+        },
+        {
+            "name": "Track Saboteur",
+            "type": "Elite",
+            "hp": 27,
+            "damage": 9,
+            "behavior": "jam"
+        },
+        {
+            "name": "Customs Interceptor",
+            "type": "Support",
+            "hp": 25,
+            "damage": 5,
+            "behavior": "disrupt"
+        },
+        {
+            "name": "Cargo Handler Heavy",
+            "type": "Elite",
+            "hp": 32,
+            "damage": 7,
+            "behavior": "push"
+        }
+    ],
+    "boss": [
+        {
+            "name": "Stationmaster Krail",
+            "type": "Boss",
+            "hp": 46,
+            "damage": 10,
+            "behavior": "coordinate"
+        },
+        {
+            "name": "Smuggler Queen Zara",
+            "type": "Boss",
+            "hp": 45,
+            "damage": 11,
+            "behavior": "evade"
+        },
+        {
+            "name": "The Conductor",
+            "type": "Boss",
+            "hp": 48,
+            "damage": 9,
+            "behavior": "control"
+        },
+        {
+            "name": "Portmaster Vyne",
+            "type": "Boss",
+            "hp": 47,
+            "damage": 10,
+            "behavior": "redirect"
+        }
+    ]
+}
+
 }

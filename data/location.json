@@ -28,6 +28,7 @@
         "Kremlin, Moscow", 
         "Colosseum, Rome"
     ],
+
     "Jungle": [
         "Amazon Jungle Outpost",
         "Congo Basin Hideout, DRC",
@@ -36,8 +37,17 @@
         "Darien Gap Pass, Panama",
         "Papua Guerilla Camp, Indonesia",
         "Mekong River Station, Laos",
-        "Jungle Lab, Madagascar"
+        "Jungle Lab, Madagascar",
+        "Kalimantan Rebel Site, Borneo",                 
+        "Operation Viper Nest, Venezuela",               
+        "Equatorial Research Hub, Gabon",                
+        "Chocó Rainforest Listening Post, Colombia",
+        "Perak Blacksite, Malaysia",                     
+        "Tropico Surveillance Camp, Suriname",           
+        "Río Tapajós Landing Zone, Brazil",              
+        "Boa Vista Smuggler Camp, Brazil"                
     ],
+
     "Arctic": [
         "Arctic Research Base",
         "Thule Radar Station, Greenland",
@@ -46,11 +56,20 @@
         "Icebreaker Vessel - Arctic Circle",
         "Ny-Ålesund Facility, Svalbard",
         "Frozen Listening Post, Kamchatka",
-        "Cryo-Lab 7, Antarctica"
+        "Cryo-Lab 7, Antarctica",
+        "Nordvik Sub-Zero Lab, Norway",                  
+        "Camp Fenrir, Iceland",                          
+        "Polar Echo Array, Alaska",                      
+        "Boreal Drift Station, Canada",                  
+        "Tundra Relay 9, Finland",                       
+        "Subglacial Archives, East Antarctica",          
+        "Operation Iceveil Base, Barents Sea",           
+        "Glacier Shield Relay, Franz Josef Land"         
     ],
+
+
     "Underground": [
         "Pentagon, USA",
-        "Cheyenne Mountain Complex",
         "Underground Bunker, Iceland",
         "NSA HQ, Fort Meade",
         "NORAD Command Center",
@@ -62,6 +81,7 @@
         "Subterranean Reactor, Iran",
         "Sealed Metro Lab, Berlin"
     ],
+
     "Mountain": [
         "Cheyenne Mountain Complex",
         "Tbilisi, Georgia",
@@ -75,8 +95,9 @@
         "Rocky Peak Camp, Colorado",
         "Pyrenees Radar Site, Spain/France"
     ],
+
     "Coastal": [
-       "Oil Rig, North Sea",
+        "Oil Rig, North Sea",
         "Cargo Ship - Pacific",
         "Island Fortress, Philippines",
         "Venice, Italy",
@@ -99,6 +120,7 @@
         "Valparaíso Listening Post, Chile",
         "Singapore Naval Yard"
     ],
+
     "Desert": [
         "Desert Base, Libya",
         "Baghdad, Iraq",
@@ -121,28 +143,120 @@
 
     "Entertainment": [
         "Abandoned Theme Park, Japan",
-        "Luxury Casino, Monaco",
+        "Golden Lotus Casino, Macau",
         "Olympic Village, Sochi",
-        "Downtown Mall, Dubai",
-        "Music Festival Grounds, Germany",
-        "Grand Theater, Paris",
-        "Seaside Boardwalk, California",
+        "Skyspire MegaMall, Dubai",
+        "Riverfront Music Grounds, Germany",
+        "Grand Lumière Theater, Paris",
+        "Seaside Boardwalk, Santa Reina",
         "Night Market, Bangkok",
         "Cultural Expo Center, Shanghai",
-        "Disused Carnival Site, Brazil"
-      ],
+        "Carnival Grounds, São Amaro",
+        "Cyber Dome Arcade, Seoul",                     
+        "Neo Neon District, Las Vegas",                 
+        "Atlantis Amusement Complex, Dubai",            
+        "Old World Expo Park, Montreal",                
+        "Hollywood Film Studio Backlot, LA",
+        "Plaza del Sol Arena, Barcelona",               
+        "Frozen Palace Hotel, Reykjavík",               
+        "Floating Pavilion, Singapore",                 
+        "Glass Gardens Theater, Venice",                
+        "Festival City Grounds, Cape Town"              
+    ],
+
 
     "Transit": [
         "International Airport, Frankfurt",
         "Grand Central Station, New York",
         "Shinkansen Depot, Tokyo",
-        "Container Port, Singapore",
+        "Crimson Tide Port, Singapore",
         "Trans-Siberian Rail Hub, Novosibirsk",
-        "Bus Terminal, Mexico City",
+        "Federal Bus Terminal, Mexico City",
         "Canary Wharf Underground, London",
-        "Maglev Transit Lab, Shanghai",
-        "Underground Transit Hub, Seoul",
-        "Trainyard, Johannesburg"
-      ]
-      
+        "Maglev Research Lab, Shanghai",
+        "Subterra Transit Nexus, Seoul",
+        "Ironline Trainyard, Johannesburg",
+        "Eclipse Transit Node, Dubai",           
+        "Arclight Substation, Buenos Aires",     
+        "North Loop Exchange, Toronto",          
+        "Polar Freight Terminal, Murmansk",      
+        "SkyPier Terminal, Hong Kong",
+        "Zahara Transit Tower, Casablanca",      
+        "Metro Concourse Alpha, Prague",         
+        "Tarmac 17 - Secret Hangar, Langley",    
+        "Ion Rail Hub, Kuala Lumpur",            
+        "Steel Spine Lineyard, Warsaw"           
+    ],
+
+    "Industrial": [
+        "Steelworks Refinery, Pittsburgh",
+        "Orion Robotics Hub, Detroit",
+        "Haruna Shipyard, Japan",
+        "Red Rock Mining Complex, Australia",
+        "Xintao Chemical Plant, Guangzhou",
+        "Volgograd Railworks, Russia",
+        "Giza Industrial Freeport, Egypt",
+        "Blackridge Foundry, South Africa",
+        "Westerlicht Oil Fields, Netherlands",
+        "Khorasan Smelter Complex, Iran",
+        "Tarakan Drilling Platform, Indonesia",
+        "FerroCore Alloy Mill, Brazil",
+        "Coaliton Scrap Docks, Bangladesh",
+        "Bishop’s Yard Assembly Plant, UK",
+        "Tashkent Rail Forge, Uzbekistan",
+        "Oceanline Container Facility, Philippines",
+        "Norrvik Logistics Hub, Sweden",
+        "Hazara Copper Works, Pakistan",
+        "Greystone Arms Factory, Ukraine",
+        "Polaris Auto Assembly, Mexico"
+    ],
+
+
+    "Cyber": [
+        "NeuralNet Core, Seoul",
+        "QuantSec Vault, Zürich",
+        "DeepLink Node, Silicon Valley",
+        "Data Haven 12, Singapore",
+        "Atlas Quantum Lab, Stockholm",
+        "Aurora AI Campus, Toronto",
+        "Virtual Command Nexus, Dubai",
+        "Project Ghostline Facility, South Korea",
+        "Mirage Network Hub, Bangalore",
+        "Black Ice Server Farm, Iceland",
+        "OmniSys DevNet, Tokyo",
+        "Glacier Dataworks, Norway",
+        "Orbis Biometric Nexus, Chicago",
+        "Redline Systems HQ, Israel",
+        "Vega Nanosec Labs, Finland",
+        "Cipher Fortress, Estonia",
+        "Bytefall Tower, Hong Kong",
+        "EchoFrame Core, New Zealand",
+        "Omega Logic Array, Taiwan",
+        "Voidtrace Signal Dome, Czech Republic"
+    ],
+
+    "Wasteland": [
+        "Red Zone District, Pripyat",
+        "Old Border Fort, Helmand",
+        "No-Man’s Zone, Sinai Peninsula",
+        "Ashline Quarantine Zone, Ukraine",
+        "Rustwind Convoy Grounds, Mongolia",
+        "Fallout Exclusion Sector, Nevada",
+        "Dustspire Oil Ruins, Iraq",
+        "Nuketown Control Grid, Kazakhstan",
+        "Scorched Pass Refugee Camp, Syria",
+        "Derelict FOB Echo, Somalia",
+        "Black Hollow Airfield, Angola",
+        "Decayed Command Post, Belarus",
+        "Echo Outlands Checkpoint, Turkey",
+        "Boneyard Barrens, Arizona",
+        "Ironveil Containment Dome, India",
+        "Zeta Relay Fragment Site, Turkmenistan",
+        "Ghostlight Fortress Ruins, Serbia",
+        "Warlord Trail, Sudan",
+        "Ashway Megastorm Crater, Afghanistan",
+        "Lone Watchtower, Western Sahara"
+    ]
+
+
   }

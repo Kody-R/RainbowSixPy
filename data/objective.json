@@ -1,53 +1,88 @@
 {
-    "Extraction": [
-            "Infiltrate compound",
-            "Secure server room",
-            "Breach facility gate",
-            "Disable comms array",
-            "Intercept smuggler convoy",
-            "Recover stolen tech"
-    ],
-    "Sabotage": [
-            "Sabotage radar array",
-            "Evade patrols",
-            "Destroy weapons cache",
-            "Jam radar dish",
-            "Board enemy vehicle",
-            "Plant explosive and escape"
-    ],
-    "Assault": [
-            "Neutralize HVT",
-            "Plant tracking device",
-            "Secure forward outpost",
-            "Establish signal beacon",
-            "Gain access via roof",
-            "Take control of control room",
-            "Clear extraction zone"
-    ],
-    "Cyber": [
-            "Hack drone uplink",
-            "Retrieve intel",
-            "Interrogate captured officer",
-            "Secure data terminal",
-            "Hack local network",
-            "Upload virus",
-            "Escape before lockdown"
-    ],
-    "Rescue": [
-            "Locate hostage",
-            "Disarm perimeter traps",
-            "Extract to safehouse"
-    ],
-    "Demolition": [
-            "Find and tag weapons cache",
-            "Neutralize defenders",
-            "Mark for airstrike"
-    ],
-    "Stealth": [
-            "Disable surveillance grid",
-            "Plant false intel",
-            "Scout facility",
-            "Map patrol routes",
-            "Eliminate key targets"
-    ]
-}
+        "Extraction": [
+          "Infiltrate compound",
+          "Secure server room",
+          "Breach facility gate",
+          "Disable comms array",
+          "Intercept smuggler convoy",
+          "Recover stolen tech",
+          "Extract VIP agent",
+          "Evacuate wounded operative"
+        ],
+        "Sabotage": [
+          "Sabotage radar array",
+          "Evade patrols",
+          "Destroy weapons cache",
+          "Jam radar dish",
+          "Board enemy vehicle",
+          "Plant explosive and escape",
+          "Disable power grid",
+          "Sink cargo ship",
+          "Detonate fuel depot"
+        ],
+        "Assault": [
+          "Neutralize HVT",
+          "Plant tracking device",
+          "Secure forward outpost",
+          "Establish signal beacon",
+          "Gain access via roof",
+          "Take control of control room",
+          "Clear extraction zone",
+          "Ambush convoy"
+        ],
+        "Cyber": [
+          "Hack drone uplink",
+          "Retrieve intel",
+          "Interrogate captured officer",
+          "Secure data terminal",
+          "Hack local network",
+          "Upload virus",
+          "Escape before lockdown",
+          "Bypass firewall",
+          "Hijack enemy satellite"
+        ],
+        "Rescue": [
+          "Locate hostage",
+          "Disarm perimeter traps",
+          "Extract to safehouse",
+          "Provide field med aid",
+          "Rescue downed pilot",
+          "Escort civilians to safe zone"
+        ],
+        "Demolition": [
+          "Find and tag weapons cache",
+          "Neutralize defenders",
+          "Mark for airstrike",
+          "Place C4 on support beams",
+          "Trigger controlled collapse"
+        ],
+        "Stealth": [
+          "Disable surveillance grid",
+          "Plant false intel",
+          "Scout facility",
+          "Map patrol routes",
+          "Eliminate key targets",
+          "Take photo of enemy plans"
+        ],
+        "Exfil": [
+          "Reach rooftop extraction point",
+          "Hold LZ for evac",
+          "Clear landing zone",
+          "Signal evac chopper"
+        ],
+        "Defense": [
+          "Fortify safehouse",
+          "Repel enemy assault",
+          "Set perimeter defenses",
+          "Protect intel room",
+          "Cover injured squadmate"
+        ],
+        "Recon": [
+          "Survey target area",
+          "Tag enemies from distance",
+          "Mark vehicle routes",
+          "Track enemy movement",
+          "Tap enemy comms"
+        ]
+      }
+      

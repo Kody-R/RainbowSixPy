@@ -1,0 +1,42 @@
+INDUSTRIAL_ENEMIES = [
+    "Factory Enforcers",
+    "Union Saboteurs",
+    "Smuggler Dockhands",
+    "PMC Longshoremen",
+    "Hazmat Patrol",
+    "Black Market Mechanics",
+    "Industrial Security Bots",
+    "Heavy Loader Brutes",
+    "Refinery Guards",
+    "Railjack Syndicate Operatives"
+]
+
+
+CYBER_ENEMIES = [
+    "Quantum Hackers",
+    "NeuroNet Operators",
+    "Digital Ghosts",
+    "Firewall Sentinels",
+    "Synthwave Assassins",
+    "Data Cult Zealots",
+    "Augmented Mercs",
+    "Gridlock Drone Swarm",
+    "ICEbreaker Technicians",
+    "Signaljackers"
+]
+
+
+WASTELAND_ENEMIES = [
+    "Raiders of the Crater",
+    "Scavenger Lords",
+    "Ashline Guerillas",
+    "Rustborn Snipers",
+    "Biohazard Nomads",
+    "Lost Legion Remnants",
+    "Tunnel Dwellers",
+    "Warlord's Enforcers",
+    "Exiled Soldiers",
+    "Dustborn Marauders"
+]
+
+

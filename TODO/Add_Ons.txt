@@ -1,0 +1,97 @@
+CLASSES: Assault, Demolitions, Electronics, Recon, and Sniper
+
+🧠 Tactical Depth Additions
+1. Operator Abilities / Perks
+Each operator could have a passive special ability:
+
+CHAVEZ (Assault): +2 damage with breach weapons.
+
+HAWK (Recon): Always sees loot in adjacent zones.
+
+DOC (Medic): Can revive once per mission.
+
+
+2. Zone Traps / Hazards
+Add random environmental hazards (e.g., mines, surveillance cameras, cold weather penalties):
+
+
+3. Branching Outcomes
+Success in one zone could:
+
+Unlock alternate routes
+
+Lower future alert levels
+
+Spawn optional bonus zones (intel caches, hostages)
+
+🔫 Combat Expansion
+4. Squad-Level Combat
+Instead of 1v1 per zone, simulate squad actions:
+
+Select formation (e.g., "Stealth Entry", "Overwatch", "Rush")
+
+Use leadership stat to coordinate multi-op bonuses
+
+Resolve multiple rolls with area effects (e.g., Flashbang disables all enemies)
+
+5. Turn-Based Encounters
+Introduce multi-round encounters in key zones:
+
+Enemy retaliates or reinforces
+
+Operators must choose cover, support actions (heal, spot, flank)
+
+Could be command-line-based at first, later visual in Pygame
+
+🧰 Gear System Upgrades
+6. Consumable Use Tracking
+Track consumables (e.g. Medkits, Flashbangs) per operator per mission.
+
+7. Loadout Templates / Presets
+Let users define and quick-assign gear presets for operators.
+
+8. Loot Upgrade System
+Loot includes mod parts:
+
+Suppressors: reduce noise
+
+Scopes: increase bonus on tech/marksmanship
+
+Armor plates: reduce damage, increase weight
+
+📈 Progression & Strategy
+9. Campaign-Wide Effects
+Failing missions increases world alert level globally.
+
+Completing chains of missions in the same region gives regional bonuses.
+
+10. Skill Tree / Training System
+XP could be used to unlock:
+
+Stat boosts (stealth +1)
+
+New abilities
+
+Gear rarities
+
+💣 Mission & Encounter Evolution
+11. Timed Objectives
+Some objectives could require completing in N moves/zones or alert spikes.
+
+12. Intel-Driven Choices
+Based on intel_level, let players choose:
+
+Path through mission
+
+Reveal threats ahead of time
+
+Reduce enemy numbers
+
+
+14. Visual Tactical Map (GUI)
+Expand the zone flow to display:
+
+Mission zones in a tree/graph structure
+
+Real-time updates as zones are cleared
+
