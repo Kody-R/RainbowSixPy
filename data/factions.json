@@ -388,5 +388,24 @@
       "Glacier Warden",
       "Icehuntress"
     ]
+  },
+  "Raksha Mandala": {
+    "country": "India",
+    "style": "Post-national warrior-monk order protecting ancient AI cores in Himalayan vaults.",
+    "presence": [
+      "Mountain",
+      "Underground",
+      "Cyber"
+    ],
+    "tactics":[
+      "Psychic tech disruption",
+      "Reactive shielding",
+      "Storm-based ambushes"
+    ],
+    "notable_units":[
+      "Himalayan Warden",
+      "Lotus Hacker",
+      "Storm Monk"
+    ]
   }
 }
