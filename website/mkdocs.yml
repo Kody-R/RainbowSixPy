@@ -1,10 +1,10 @@
 site_name: Rainbow Six PS1 Wiki
+
 theme:
-  name: null
-  custom_dir: theme
+  name: mkdocs  # Use default theme instead of null
 
 extra_css:
-  - main.css
+  - theme/main.css
 
 nav:
   - Home: index.md
@@ -13,3 +13,4 @@ nav:
   - Missions: missions.md
   - Terrain: terrain_effects.md
   - Factions: factions.md
+

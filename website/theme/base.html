@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ config.site_name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ base_url }}/theme/main.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>{{ config.site_name }}</h2>
+    <nav>
+      <ul>
+        {% for nav_item in nav %}
+          <li class="{% if nav_item.active %}active{% endif %}">
+            <a href="{{ nav_item.url | url }}">{{ nav_item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>Rainbow Six: Strategic Ops Wiki</p>
+    </footer>
+  </div>
+</body>
+</html>

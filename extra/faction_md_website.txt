@@ -1,0 +1,27 @@
+factions/
+├── Alliance/
+│   ├── Iron_Banner_&_Stahl_Krieger.md
+│
+├── Country/
+│   ├── Arktikos_Valkyries.md
+│	├──	Black_Nile_Pact.md
+│	├──	Crimson_Dao_Triad.md
+│	├──	Jaguar_Azul.md
+│	├──	Kongo_Kai.md
+│	├──	Les_Loups_Gris.md
+│	├──	Red_Veldt_Legion.md
+│	├──	Shadow_Locus_Front.md
+│	├── Stahl_Krieger.md
+│	└── Zvezda_Spetsgruppa.md
+│
+└── Terrain/
+    ├── Black_Reef_Conglomerate.md
+	├──	Iron_Banner_Syndicate.md
+	├──	Iron_Veil_Authority.md
+	├──	Neurohex_Collective.md
+	├──	Nova_Hydra_Directive.md
+	├──	Ordo_Vanta.md
+	├──	Red_Dust_Confederacy.md
+	├──	SYN-Eclipse.md
+	├──	The_Pale_Hand.md
+	└──	Velvet_Accord.md
