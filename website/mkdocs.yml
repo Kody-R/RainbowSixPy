@@ -1,0 +1,15 @@
+site_name: Rainbow Six PS1 Wiki
+theme:
+  name: null
+  custom_dir: theme
+
+extra_css:
+  - main.css
+
+nav:
+  - Home: index.md
+  - Operators: operators.md
+  - Gear: gear.md
+  - Missions: missions.md
+  - Terrain: terrain_effects.md
+  - Factions: factions.md
