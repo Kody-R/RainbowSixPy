@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ config.site_name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ base_url }}/theme/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <div class="scanlines"></div>
+
   <div class="sidebar">
     <h2>{{ config.site_name }}</h2>
-    <nav>
-      <ul>
-        {% for nav_item in nav %}
-          <li class="{% if nav_item.active %}active{% endif %}">
-            <a href="{{ nav_item.url | url }}">{{ nav_item.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <ul>
+      {% for nav_item in nav %}
+        <li class="{% if nav_item.active %}active{% endif %}">
+          <a href="{{ nav_item.url | url }}">{{ nav_item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
   <div class="content">
@@ -24,7 +24,7 @@
       {{ content }}
     </main>
     <footer>
-      <p>Rainbow Six: Strategic Ops Wiki</p>
+      <p>📼 Rainbow Six PS1 Wiki</p>
     </footer>
   </div>
 </body>

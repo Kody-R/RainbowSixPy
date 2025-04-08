@@ -1,10 +1,7 @@
 site_name: Rainbow Six PS1 Wiki
 
 theme:
-  name: mkdocs  # Use default theme instead of null
-
-extra_css:
-  - theme/main.css
+  name: bootstrap386
 
 nav:
   - Home: index.md
