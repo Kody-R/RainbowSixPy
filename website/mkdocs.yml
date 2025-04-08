@@ -1,7 +1,7 @@
 site_name: Rainbow Six PS1 Wiki
 
 theme:
-  name: bootstrap386
+  name: bootstrap
 
 nav:
   - Home: index.md
