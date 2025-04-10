@@ -2,6 +2,7 @@
     {
       "name": "Domingo Chavez",
       "codename": "CHAVEZ",
+      "country": "USA",
       "role": "Assault",
       "stealth": 6,
       "marksmanship": 9,
@@ -14,6 +15,7 @@
     {
       "name": "Sam Driscoll",
       "codename": "HAWK",
+      "country": "USA",
       "role": "Recon",
       "stealth": 9,
       "marksmanship": 7,
@@ -26,6 +28,7 @@
     {
       "name": "Dieter Weber",
       "codename": "WEBER",
+      "country": "Germany",
       "role": "Sniper",
       "stealth": 7,
       "marksmanship": 10,
@@ -38,6 +41,7 @@
     {
       "name": "Eddie Price",
       "codename": "FALCON",
+      "country": "UK",
       "role": "Commander",
       "stealth": 5,
       "marksmanship": 8,
@@ -50,6 +54,7 @@
     {
       "name": "Louis Loiselle",
       "codename": "GHOST",
+      "country": "France",
       "role": "Recon",
       "stealth": 10,
       "marksmanship": 7,
@@ -62,6 +67,7 @@
     {
       "name": "Tim Noonan",
       "codename": "LINK",
+      "country": "USA",
       "role": "Tech",
       "stealth": 4,
       "marksmanship": 5,
@@ -74,6 +80,7 @@
     {
       "name": "Michael Granger",
       "codename": "BULLDOG",
+      "country": "France",
       "role": "Assault",
       "stealth": 4,
       "marksmanship": 8,
@@ -86,6 +93,7 @@
     {
       "name": "David Foster",
       "codename": "DOC",
+      "country": "Belgium",
       "role": "Medic",
       "stealth": 5,
       "marksmanship": 6,
@@ -98,6 +106,7 @@
     {
       "name": "Antonio Ortega",
       "codename": "EDGE",
+      "country": "Spain",
       "role": "Infiltrator",
       "stealth": 10,
       "marksmanship": 6,
@@ -110,6 +119,7 @@
     {
       "name": "Gus Werenski",
       "codename": "WATCHDOG",
+      "country": "USA",
       "role": "Defense",
       "stealth": 6,
       "marksmanship": 7,
@@ -120,32 +130,35 @@
       "gear": ["AR-33", "Armor Plates"]
     },
     {
-        "name": "Kiera Stone",
-        "codename": "VIXEN",
-        "role": "Infiltrator",
-        "stealth": 10,
-        "marksmanship": 6,
-        "tech": 7,
-        "leadership": 4,
-        "stamina": 8,
-        "ability": "Cloak Entry",
-        "gear": ["Camouflage Cloak", "Silenced Pistol"]
+      "name": "Kiera Stone",
+      "codename": "VIXEN",
+      "country": "Canada",
+      "role": "Infiltrator",
+      "stealth": 10,
+      "marksmanship": 6,
+      "tech": 7,
+      "leadership": 4,
+      "stamina": 8,
+      "ability": "Cloak Entry",
+      "gear": ["Camouflage Cloak", "Silenced Pistol"]
       },
-      {
-        "name": "Rafael Ortiz",
-        "codename": "SLEDGE",
-        "role": "Assault",
-        "stealth": 5,
-        "marksmanship": 8,
-        "tech": 4,
-        "leadership": 6,
-        "stamina": 9,
-        "ability": "Power Breach",
-        "gear": ["SPAS-12", "C4 Charge"]
-      },
-      {
+    {
+      "name": "Rafael Ortiz",
+      "codename": "SLEDGE",
+      "country": "Mexico",
+      "role": "Assault",
+      "stealth": 5,
+      "marksmanship": 8,
+      "tech": 4,
+      "leadership": 6,
+      "stamina": 9,
+      "ability": "Power Breach",
+      "gear": ["SPAS-12", "C4 Charge"]
+    },
+    {
         "name": "Clara Zhou",
-        "codename": "SERAPH",
+        "codename": "SUN",
+        "country": "Japan",
         "role": "Medic",
         "stealth": 6,
         "marksmanship": 5,
@@ -154,10 +167,11 @@
         "stamina": 7,
         "ability": "Nano Surge",
         "gear": ["Nano Medkit", "Combat Stim Kit"]
-      },
-      {
+    },
+    {
         "name": "Jackson Reid",
         "codename": "ANCHOR",
+        "country": "USA",
         "role": "Defense",
         "stealth": 4,
         "marksmanship": 7,
@@ -166,10 +180,11 @@
         "stamina": 8,
         "ability": "Cover Wall",
         "gear": ["Reinforced Shield", "Portable Cover"]
-      },
+    },
       {
         "name": "Yuri Antonov",
         "codename": "PHANTOM",
+        "country": "Russia",
         "role": "Recon",
         "stealth": 9,
         "marksmanship": 8,
@@ -182,6 +197,7 @@
       {
         "name": "Elena Vargas",
         "codename": "RIFT",
+        "country": "Mexico",
         "role": "Tech",
         "stealth": 5,
         "marksmanship": 6,
@@ -194,6 +210,7 @@
       {
         "name": "Marcus Cole",
         "codename": "BARRAGE",
+        "country": "USA",
         "role": "Assault",
         "stealth": 4,
         "marksmanship": 9,
@@ -206,6 +223,7 @@
       {
         "name": "Lina Novak",
         "codename": "WRAITH",
+        "country": "Germany",
         "role": "Sniper",
         "stealth": 8,
         "marksmanship": 10,
@@ -218,6 +236,7 @@
       {
         "name": "Omar Khoury",
         "codename": "NOVA",
+        "country": "UK",
         "role": "Tech",
         "stealth": 6,
         "marksmanship": 5,
@@ -230,6 +249,7 @@
       {
         "name": "Maya Rojas",
         "codename": "RECONIX",
+        "country": "Mexico",
         "role": "Recon",
         "stealth": 9,
         "marksmanship": 7,
