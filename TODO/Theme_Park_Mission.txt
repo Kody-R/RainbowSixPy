@@ -1,0 +1,12 @@
+from mission_map import Zone
+
+theme_park_map = {
+    "Entrance Plaza": Zone("Entrance Plaza", "Main gates with rotating patrols and metal detectors.", encounter={"type": "stealth"}, next_zones=["Roller Coaster Control Room"]),
+    "Roller Coaster Control Room": Zone("Roller Coaster Control Room", "Surveillance and ride control hub.", encounter={"type": "tech"}, loot=["EMP"], next_zones=["Haunted House", "Food Court"]),
+    "Haunted House": Zone("Haunted House", "Dark, maze-like structure filled with fog and animatronics.", encounter={"type": "stealth"}, next_zones=["Games Alley"]),
+    "Food Court": Zone("Food Court", "Open seating area with vendors — abandoned, but lootable.", loot=["Adrenaline Shot"], next_zones=["Games Alley"]),
+    "Games Alley": Zone("Games Alley", "Tactical cover and scattered loot, possible informant nearby.", encounter={"type": "tech"}, next_zones=["Fireworks Storage"]),
+    "Fireworks Storage": Zone("Fireworks Storage", "Highly flammable environment. Ideal for sabotage.", encounter={"type": "marksmanship"}, loot=["Flashbang"], next_zones=["Main Stage"]),
+    "Main Stage": Zone("Main Stage", "Open area with enemy concentration. Possible hostages.", encounter={"type": "marksmanship"}, next_zones=["Helipad"]),
+    "Helipad": Zone("Helipad", "Extraction point on the roof of the stage building.", description="Final extraction site. No threats detected.")
+}
