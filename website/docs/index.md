@@ -1,1 +1,0 @@
-# Welcome to the Rainbow Six PS1 Wiki
