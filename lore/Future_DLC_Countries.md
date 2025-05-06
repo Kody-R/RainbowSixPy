@@ -8,8 +8,6 @@ Explore untapped global hotspots for unique operations and story expansion in th
 
 | Country       | Mission Themes |
 |---------------|----------------|
-| **Argentina** | Antarctic gateway sabotage, former death squad resurfacing |
-| **Colombia**  | Cartel tech labs, jungle bio-weapon tests |
 | **Canada**    | Arctic surveillance breach, oil reserve defense |
 | **Chile**     | Andes-based doomsday cult with seismic weapons |
 
@@ -30,11 +28,9 @@ Explore untapped global hotspots for unique operations and story expansion in th
 
 | Country       | Mission Themes |
 |---------------|----------------|
-| **Philippines** | Archipelago-based smuggler nation using weather-based disruption tech |
 | **Indonesia** | Volcano temple operations, underwater drone factories |
 | **South Korea** | AI rebellion simulations breaking containment at a cyber-military base |
-| **Kazakhstan** | Abandoned Soviet cosmodrome turned rogue orbital uplink |
-| **Australia (Outback)** | Rogue survivalist faction exploiting EMP zones |
+| **Australia** | Rogue survivalist faction exploiting EMP zones |
 
 ---
 
