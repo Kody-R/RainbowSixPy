@@ -1,0 +1,94 @@
+🧱 Phase 1: Core Grid & Unit Foundations (You've started this!)
+✅ Create GridMap with obstacles and terrain types
+
+✅ Add Operator class with position and movement
+
+✅ Implement basic turn loop with unit movement
+
+✅ Visualize grid and units with pygame
+
+🎮 Phase 2: Tactical Combat Core
+Turn-Based System
+
+Alternate between player and enemy turns
+
+Action Points (AP): each unit has 2 AP per turn (1 for move, 1 for shoot/etc.)
+
+Track current_turn and reset AP at turn start
+
+Enemy AI
+
+Add Enemy class
+
+Implement basic AI: move toward player and shoot if in range/LOS
+
+Combat System
+
+Add weapons with range, accuracy, and damage
+
+Line of Sight (LOS) checking (Bresenham's line or raycast-like logic)
+
+Attack rolls with hit chance + damage application
+
+Cover System
+
+Add cover to grid cells (half/full)
+
+Units behind cover get defensive bonuses
+
+Facing/direction can affect bonuses
+
+🔫 Phase 3: Visual & Gameplay Feedback
+Combat Effects
+
+Visual indicators for hits, misses, health changes
+
+Floating text or animations for attacks
+
+Health Bars & Status
+
+Render health bars above units
+
+Show statuses: Overwatch, Wounded, Panicked, etc.
+
+UI Enhancements
+
+Action menu per unit (move, shoot, use item)
+
+AP tracker, turn tracker, logs
+
+🧠 Phase 4: Advanced Systems
+Overwatch / Reaction Fire
+
+Units can reserve AP to shoot during enemy movement
+
+Fog of War
+
+Reveal only cells in line of sight or scanning range
+
+Destructible Terrain
+
+Walls/cover can be destroyed with explosives
+
+Inventory & Gear Usage
+
+Medkits, grenades, EMPs, hacking devices
+
+Limited-use per mission
+
+🌍 Phase 5: Mission Layer Integration
+Objective Types
+
+Rescue, sabotage, hack, extraction, etc.
+
+Trigger win/loss conditions
+
+Mission Generator Integration
+
+Populate grid based on zones from mission_generator.py
+
+XP & Progression
+
+Reward XP for kills, mission completion
+
+Level up system with new abilities/gear

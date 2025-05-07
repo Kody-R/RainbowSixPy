@@ -25,7 +25,6 @@ Explore untapped global hotspots for unique operations and story expansion in th
 
 | Country       | Mission Themes |
 |---------------|----------------|
-| **Indonesia** | Volcano temple operations, underwater drone factories |
 | **South Korea** | AI rebellion simulations breaking containment at a cyber-military base |
 | **Australia** | Rogue survivalist faction exploiting EMP zones |
 
@@ -35,7 +34,6 @@ Explore untapped global hotspots for unique operations and story expansion in th
 
 | Country       | Mission Themes |
 |---------------|----------------|
-| **Iran**      | Ancient ruins as staging grounds for AI-aligned cult |
 | **Turkey (Eastern)** | Split-cell insurgency with memetic biowarfare agenda |
 | **Syria**     | Warzone infiltration with multiple shifting factions (moral grey) |
 | **Lebanon**   | Urban warfare tied to collapsed intelligence agencies |
