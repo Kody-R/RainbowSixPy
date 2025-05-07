@@ -9,7 +9,6 @@ Explore untapped global hotspots for unique operations and story expansion in th
 | Country       | Mission Themes |
 |---------------|----------------|
 | **Canada**    | Arctic surveillance breach, oil reserve defense |
-| **Chile**     | Andes-based doomsday cult with seismic weapons |
 
 ---
 
@@ -19,8 +18,6 @@ Explore untapped global hotspots for unique operations and story expansion in th
 |---------------|----------------|
 | **Ukraine**   | Black site raid during active conflict zone |
 | **Poland**    | Underground rail bunkers used as cult data vaults |
-| **Sweden**    | Corporate espionage tied to biotech neural implants |
-| **Greece**    | Cyberattack launched from monasteries in Mount Athos |
 
 ---
 
