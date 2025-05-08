@@ -18,15 +18,18 @@ In **Rainbow Six: Strategic Ops**, you’ll:
 ## 🛠 Features
 
 ### 🧑‍✈️ Operator System
+
 - Each operator has a codename, role (e.g., Assault, Tech, Recon), and attributes like **stealth**, **tech**, and **marksmanship**.
 - Operators gain XP, level up, unlock rare gear, and can be wounded or killed.
 
 ### 🔫 Gear and Loadouts
+
 - Assign gear based on rarity, weight limits, and role compatibility.
 - Gear includes silenced weapons, EMPs, medkits, drones, flashbangs, and more.
 - Strategic choices impact outcomes during missions.
 
 ### 🧭 Mission Generator
+
 - Dynamic mission generator builds operations with objectives like:
   - Infiltration
   - Sabotage
@@ -35,13 +38,16 @@ In **Rainbow Six: Strategic Ops**, you’ll:
 - Missions occur in diverse terrains like **Urban**, **Jungle**, **Arctic**, and **Underground**, each with its own gameplay modifiers.
 
 ### 🧠 Encounter System
+
 - Synergy mechanics combine operator roles, gear, and terrain to influence success.
 - Failures can raise alert levels, cause injuries, or mission failure.
 
 ### 💾 Save System
+
 - Campaigns can be saved, loaded, and continued with persistent progress.
 
 ### 🖥️ GUI (PyGame)
+
 - A graphical interface complements the text-based core.
 - View operator rosters, campaign map, and manage missions visually.
 
@@ -62,9 +68,11 @@ In **Rainbow Six: Strategic Ops**, you’ll:
 ## 🚀 Getting Started
 
 ### Requirements
+
 - Python 3.10+
 - pygame
 
 ### Install Dependencies
+
 ```bash
 pip install pygame

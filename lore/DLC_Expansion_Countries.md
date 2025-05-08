@@ -4,18 +4,8 @@ These countries offer new terrain, cultural hooks, and tactical environments for
 
 ---
 
-## 🌏 Europe
-
-- **Ukraine** – Post-conflict drone scavenger cults, ghost signal warfare  
-- **Finland** – Arctic covert networks, snow-camo drone burials  
-- **Italy** – Urban ruins reappropriated by technocatholic insurgents  
-- **Czech Republic** – Tunnel-launched virus warfare under former Soviet bunkers
-
----
-
 ## 🌏 Asia-Pacific
 
-- **Thailand** – Jungle insurgents powered by black market bio-augment labs  
 - **Pakistan** – Waziristan data-fortresses, loyalty-forged AI alliances  
 - **Sri Lanka** – Island-wide sonar warfare from former naval cults  
 - **North Korea** – Hermetic myth-mechanized warfare via relic weapons & EMPs
