@@ -1,4 +1,4 @@
-# Children of Llaima
+# Childreen of Llaima
 
 🌍 **Region of Origin:**  
 **Chile (Andean Volcanic Zone, Araucanía Region)** – Volcanic cave shrines, seismic field stations, and geothermal tunnels
@@ -6,7 +6,7 @@
 ---
 
 🎴 **Overview:**  
-The **Children of Llaima** are not a rebellion.  
+The **Childreen of Llaima** are not a rebellion.  
 They are a **seismic prophecy**—a cult of geo-ritualists and tectonic saboteurs who worship the Earth’s fury.  
 Their gospel is the tremor. Their shrine is the faultline. Their war is the quake.
 
@@ -28,7 +28,7 @@ The cult communicates via **subsonic pulses**, echoing tremors to awaken followe
 ---
 
 ⚔️ **Operations Profile:**  
-Children of Llaima weaponize **volcanic terrain, tremor tech, and religious terror**.
+Childreen of Llaima weaponize **volcanic terrain, tremor tech, and religious terror**.
 
 - **Primary Terrain:** Andes caverns, lava vents, crater bunkers  
 - **Style:** Seismic ambushes, obsidian shrapnel traps, magma vent sabotage  
